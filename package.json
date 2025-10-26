@@ -1,0 +1,21 @@
+{
+  "name": "svg-importer",
+  "displayName": "SVG Importer",
+  "description": "Import SVG files and code into Aseprite sprites with automatic scaling",
+  "version": "1.0.0",
+  "author": {
+    "name": "Julius Wong",
+    "email": "julius@example.com"
+  },
+  "contributes": {
+    "scripts": [
+      { 
+        "path": "./svg-importer.lua",
+        "title": "Import SVG",
+        "group": "file_import"
+      }
+    ]
+  },
+  "dependencies": {},
+  "license": "MIT"
+}
