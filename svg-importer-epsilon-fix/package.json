@@ -1,0 +1,25 @@
+{
+  "name": "svg-importer-epsilon-fix",
+  "displayName": "SVG Importer (Epsilon Fixed)",
+  "description": "Import SVG files with pixel-perfect rendering using epsilon-based boundary handling",
+  "version": "1.5.0",
+  "author": {
+    "name": "SVG Importer",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [],
+  "publisher": "",
+  "license": "",
+  "categories": [
+    "Import"
+  ],
+  "contributes": {
+    "scripts": [
+      {
+        "path": "./svg-importer.lua"
+      }
+    ]
+  }
+}
+

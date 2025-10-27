@@ -141,39 +141,22 @@ local function pathToPixels(pathCommands, scale, offsetX, offsetY, viewBoxX, vie
     return pixels
 end
 
--- Improved point-in-polygon test using winding number algorithm
--- More robust for complex shapes than simple ray casting
+-- Simple point-in-polygon test for filling
 local function pointInPolygon(x, y, polygon)
-    if #polygon < 3 then return false end
+    local inside = false
+    local j = #polygon
     
-    local winding = 0
-    local n = #polygon
-    
-    for i = 1, n do
-        local j = (i % n) + 1
+    for i = 1, #polygon do
         local xi, yi = polygon[i].x, polygon[i].y
         local xj, yj = polygon[j].x, polygon[j].y
         
-        if yi <= y then
-            if yj > y then
-                -- Upward crossing
-                local cross = (xj - xi) * (y - yi) - (x - xi) * (yj - yi)
-                if cross > 0 then
-                    winding = winding + 1
-                end
-            end
-        else
-            if yj <= y then
-                -- Downward crossing
-                local cross = (xj - xi) * (y - yi) - (x - xi) * (yj - yi)
-                if cross < 0 then
-                    winding = winding - 1
-                end
-            end
+        if ((yi > y) ~= (yj > y)) and (x < (xj - xi) * (y - yi) / (yj - yi) + xi) then
+            inside = not inside
         end
+        j = i
     end
     
-    return winding ~= 0
+    return inside
 end
 
 -- Fill closed paths with sub-pixel precision
@@ -198,27 +181,12 @@ local function fillPath(pathPoints, width, height, color)
         end
     end
     
-    -- Debug: Check if test pixel (2,40) is in bounds
-    local isBlackPath = (color.r == 0 and color.g == 0 and color.b == 0)
-    if isBlackPath then
-        print(string.format("BLACK PATH - BBox: X[%.1f to %.1f], Y[%.1f to %.1f], Points: %d", 
-            minX, maxX, minY, maxY, #pathPoints))
-        if 2 >= minX and 2 <= maxX and 40 >= minY and 40 <= maxY then
-            print("  → Pixel (2,40) IS in bounding box!")
-        else
-            print("  → Pixel (2,40) NOT in bounding box")
-        end
-    end
-    
     -- Safety check: limit fill area to prevent hanging
     local fillArea = (maxX - minX) * (maxY - minY)
     local MAX_FILL_AREA = 50000 -- Increased limit for complex shapes
     
     if fillArea > MAX_FILL_AREA then
         -- Skip fill for very large areas
-        if isBlackPath then
-            print(string.format("  → SKIPPED: Area %.0f > %d", fillArea, MAX_FILL_AREA))
-        end
         return filledPixels
     end
     
@@ -227,25 +195,12 @@ local function fillPath(pathPoints, width, height, color)
         for x = math.floor(minX), math.ceil(maxX) do
             if x >= 0 and x < width and y >= 0 and y < height then
                 -- Test at pixel center (0.5, 0.5) for geometric precision
-                local inside = pointInPolygon(x + 0.5, y + 0.5, pathPoints)
-                
-                -- Debug specific pixel
-                if isBlackPath and x == 2 and y == 40 then
-                    print(string.format("  Testing pixel (2,40) at center (2.5,40.5): %s", 
-                        inside and "INSIDE" or "OUTSIDE"))
-                end
-                
-                if inside then
+                if pointInPolygon(x + 0.5, y + 0.5, pathPoints) then
                     table.insert(filledPixels, {
                         x = x,
                         y = y,
                         color = color
                     })
-                    
-                    -- Debug pixel addition
-                    if isBlackPath and x == 2 and y == 40 then
-                        print("  → Pixel (2,40) ADDED to filledPixels!")
-                    end
                 end
             end
         end
@@ -267,9 +222,10 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
         return pixels
     end
     
-    -- Calculate scaling with safety checks
-    local scaleX = targetWidth / viewBox.width
-    local scaleY = targetHeight / viewBox.height
+    -- Calculate scaling with padding to prevent edge-touching
+    local padding = 4  -- 4px padding on all sides
+    local scaleX = (targetWidth - padding * 2) / viewBox.width
+    local scaleY = (targetHeight - padding * 2) / viewBox.height
     local scale = math.min(scaleX, scaleY)
     
     if not scale or scale <= 0 or scale ~= scale then -- Check for NaN
@@ -290,16 +246,10 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     
     local pathPoints = {}
     
-    -- Collect points for filling, removing consecutive duplicates
-    -- Duplicates break the winding number algorithm
-    local lastX, lastY = nil, nil
+    -- Collect points for filling
     for _, pixel in ipairs(pathPixels) do
         if pixel and pixel.x and pixel.y then
-            -- Only add if different from last point (epsilon for float comparison)
-            if not lastX or math.abs(pixel.x - lastX) > 0.01 or math.abs(pixel.y - lastY) > 0.01 then
-                table.insert(pathPoints, {x = pixel.x, y = pixel.y})
-                lastX, lastY = pixel.x, pixel.y
-            end
+            table.insert(pathPoints, {x = pixel.x, y = pixel.y})
         end
     end
     
@@ -322,9 +272,6 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     if #pathPoints >= 3 then
         local success2, filledPixels = pcall(fillPath, pathPoints, targetWidth, targetHeight, path.fill)
         if success2 and filledPixels then
-            local isBlackPath = (path.fill.r == 0 and path.fill.g == 0 and path.fill.b == 0)
-            local foundTestPixel = false
-            
             for _, pixel in ipairs(filledPixels) do
                 if pixel and pixel.x and pixel.y and pixel.color then
                     table.insert(pixels, {
@@ -332,25 +279,7 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
                         y = pixel.y,
                         color = pixel.color
                     })
-                    
-                    -- Debug: Check if we're adding (2,40)
-                    if isBlackPath and pixel.x == 2 and pixel.y == 40 then
-                        foundTestPixel = true
-                    end
                 end
-            end
-            
-            if isBlackPath then
-                print(string.format("BLACK PATH - Added %d fill pixels to render queue", #filledPixels))
-                if foundTestPixel then
-                    print("  → Pixel (2,40) WAS added to final render queue!")
-                else
-                    print("  → Pixel (2,40) NOT found in final render queue")
-                end
-            end
-        else
-            if path.fill.r == 0 and path.fill.g == 0 and path.fill.b == 0 then
-                print("BLACK PATH - Fill call FAILED: " .. tostring(filledPixels))
             end
         end
     end
@@ -379,15 +308,8 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
     for i, path in ipairs(svgData.elements) do
         local success, pathPixels = pcall(renderPath, path, svgData.viewBox, targetWidth, targetHeight)
         if success and pathPixels then
-            local colorHex = string.format("#%02x%02x%02x", path.fill.r, path.fill.g, path.fill.b)
-            
             for _, pixel in ipairs(pathPixels) do
                 if pixel and pixel.x and pixel.y and pixel.color then
-                    -- Debug: Track what paints at (2,40)
-                    if pixel.x == 2 and pixel.y == 40 then
-                        print(string.format("Element #%d (%s) painting at (2,40)", i, colorHex))
-                    end
-                    
                     table.insert(result.pixels, pixel)
                 end
             end
