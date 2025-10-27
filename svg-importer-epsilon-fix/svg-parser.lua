@@ -132,12 +132,37 @@ local function parsePathData(pathData)
     return commands
 end
 
+-- Parse CSS styles from <style> block
+local function parseCSSStyles(svgContent)
+    local styles = {}
+    
+    -- Extract style block
+    local styleBlock = svgContent:match('<style><!%[CDATA%[(.-)%]%]></style>')
+    if not styleBlock then
+        styleBlock = svgContent:match('<style>(.-)</style>')
+    end
+    
+    if styleBlock then
+        -- Parse CSS rules: .class{fill:#color} (no spaces between rules)
+        for className, colorValue in styleBlock:gmatch('%.([^%{]+)%{fill:([^}]+)%}') do
+            if className and colorValue then
+                styles[className] = hexToRgb(colorValue)
+            end
+        end
+    end
+    
+    return styles
+end
+
 -- Main parsing function with group support
 function SVGParser.parse(svgContent)
     local result = {
         viewBox = {x = 0, y = 0, width = 64, height = 64},
         elements = {}
     }
+    
+    -- Parse CSS styles first
+    local cssStyles = parseCSSStyles(svgContent)
     
     -- Extract viewBox
     local viewBox = svgContent:match('viewBox="([^"]*)"')
@@ -153,15 +178,20 @@ function SVGParser.parse(svgContent)
     while i <= #svgContent do
         local char = svgContent:sub(i, i)
         
-        -- Look for opening <g> tags with fill attribute
+        -- Look for opening <g> tags with fill attribute or class
         if char == '<' and svgContent:sub(i + 1, i + 1) == 'g' and svgContent:sub(i + 2, i + 2):match('[%s>]') then
             local gEnd = svgContent:find('>', i)
             if gEnd then
                 local gTag = svgContent:sub(i, gEnd)
                 local groupFill = gTag:match('fill="([^"]*)"')
+                local groupClass = gTag:match('class="([^"]*)"')
                 
                 if groupFill then
                     local fillColor = hexToRgb(groupFill)
+                    table.insert(groupFillStack, fillColor)
+                    currentGroupFill = fillColor
+                elseif groupClass and cssStyles[groupClass] then
+                    local fillColor = cssStyles[groupClass]
                     table.insert(groupFillStack, fillColor)
                     currentGroupFill = fillColor
                 else
@@ -187,11 +217,15 @@ function SVGParser.parse(svgContent)
                 
                 -- Extract fill attribute from path
                 local pathFill = pathStr:match('fill="([^"]*)"')
+                local pathClass = pathStr:match('class="([^"]*)"')
                 local fillColor
                 
                 if pathFill then
                     -- Path has explicit fill - use it
                     fillColor = hexToRgb(pathFill)
+                elseif pathClass and cssStyles[pathClass] then
+                    -- Path uses CSS class - look up color
+                    fillColor = cssStyles[pathClass]
                 elseif currentGroupFill then
                     -- No explicit fill - inherit from group
                     fillColor = currentGroupFill

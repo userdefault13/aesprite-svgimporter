@@ -328,6 +328,253 @@ local function scanlineFillInteger(pathPoints, width, height, color)
 end
 
 -- ============================================================================
+-- MULTI-PATH FILL (for paths with holes)
+-- ============================================================================
+
+-- Build edges from multiple sub-paths (handles holes correctly)
+local function buildEdgesFromMultiPath(allPoints)
+    local edges = {}
+    local currentSubPath = {}
+    
+    for i, point in ipairs(allPoints) do
+        if point.isSubPathEnd then
+            -- End of current sub-path, build its edges
+            if #currentSubPath >= 3 then
+                local subEdges = buildEdgeTable(currentSubPath)
+                for _, edge in ipairs(subEdges) do
+                    table.insert(edges, edge)
+                end
+            end
+            currentSubPath = {}
+        else
+            table.insert(currentSubPath, point)
+        end
+    end
+    
+    -- Handle last sub-path
+    if #currentSubPath >= 3 then
+        local subEdges = buildEdgeTable(currentSubPath)
+        for _, edge in ipairs(subEdges) do
+            table.insert(edges, edge)
+        end
+    end
+    
+    return edges
+end
+
+-- Scanline fill for multiple sub-paths with non-zero winding rule
+local function scanlineFillNonZeroMultiPath(allPoints, width, height, color)
+    local pixels = {}
+    
+    if #allPoints < 3 then
+        return pixels
+    end
+    
+    -- Build edges from all sub-paths
+    local edges = buildEdgesFromMultiPath(allPoints)
+    
+    if #edges == 0 then
+        return pixels
+    end
+    
+    -- Find bounds
+    local minY, maxY = math.huge, -math.huge
+    for _, edge in ipairs(edges) do
+        minY = math.min(minY, edge.yMin)
+        maxY = math.max(maxY, edge.yMax)
+    end
+    
+    minY = math.max(0, math.floor(minY))
+    maxY = math.min(height - 1, math.ceil(maxY))
+    
+    -- Process each scanline
+    for y = minY, maxY do
+        local crossings = {}
+        
+        -- Find intersections with winding
+        for _, edge in ipairs(edges) do
+            if y >= edge.yMin and y < edge.yMax then
+                local x = edge.x + (y - edge.yMin) * edge.dx
+                table.insert(crossings, {x = x, winding = edge.winding})
+            end
+        end
+        
+        -- Sort by x
+        table.sort(crossings, function(a, b) return a.x < b.x end)
+        
+        -- Apply non-zero winding rule
+        local windingCount = 0
+        local fillStart = nil
+        
+        for i, crossing in ipairs(crossings) do
+            local prevWinding = windingCount
+            windingCount = windingCount + crossing.winding
+            
+            -- Start fill when winding becomes non-zero
+            if prevWinding == 0 and windingCount ~= 0 then
+                fillStart = crossing.x
+            end
+            
+            -- End fill when winding becomes zero
+            -- Use epsilon to handle floating-point precision
+            if prevWinding ~= 0 and windingCount == 0 and fillStart then
+                local epsilon = 0.0001
+                local xStart = math.max(0, math.floor(fillStart + epsilon))
+                local xEnd = math.min(width - 1, math.floor(crossing.x - epsilon))
+                
+                for x = xStart, xEnd do
+                    table.insert(pixels, {x = x, y = y, color = color})
+                end
+                
+                fillStart = nil
+            end
+        end
+    end
+    
+    return pixels
+end
+
+-- Integer-only scanline fill for multiple sub-paths
+local function scanlineFillIntegerMultiPath(allPoints, width, height, color)
+    local pixels = {}
+    
+    if #allPoints < 3 then
+        return pixels
+    end
+    
+    -- Build edges from all sub-paths
+    local edges = {}
+    local currentSubPath = {}
+    
+    for i, point in ipairs(allPoints) do
+        if point.isSubPathEnd then
+            -- Process completed sub-path
+            if #currentSubPath >= 3 then
+                local n = #currentSubPath
+                for j = 1, n do
+                    local k = (j % n) + 1
+                    local x1, y1 = currentSubPath[j].x, currentSubPath[j].y
+                    local x2, y2 = currentSubPath[k].x, currentSubPath[k].y
+                    
+                    if math.floor(y1) ~= math.floor(y2) then
+                        local py1, py2 = math.floor(y1), math.floor(y2)
+                        local edge
+                        if py1 < py2 then
+                            edge = {
+                                yMin = py1,
+                                yMax = py2,
+                                x = x1,
+                                dx = (x2 - x1) / (y2 - y1),
+                                winding = 1
+                            }
+                        else
+                            edge = {
+                                yMin = py2,
+                                yMax = py1,
+                                x = x2,
+                                dx = (x1 - x2) / (y1 - y2),
+                                winding = -1
+                            }
+                        end
+                        table.insert(edges, edge)
+                    end
+                end
+            end
+            currentSubPath = {}
+        else
+            table.insert(currentSubPath, point)
+        end
+    end
+    
+    -- Handle last sub-path
+    if #currentSubPath >= 3 then
+        local n = #currentSubPath
+        for j = 1, n do
+            local k = (j % n) + 1
+            local x1, y1 = currentSubPath[j].x, currentSubPath[j].y
+            local x2, y2 = currentSubPath[k].x, currentSubPath[k].y
+            
+            if math.floor(y1) ~= math.floor(y2) then
+                local py1, py2 = math.floor(y1), math.floor(y2)
+                local edge
+                if py1 < py2 then
+                    edge = {
+                        yMin = py1,
+                        yMax = py2,
+                        x = x1,
+                        dx = (x2 - x1) / (y2 - y1),
+                        winding = 1
+                    }
+                else
+                    edge = {
+                        yMin = py2,
+                        yMax = py1,
+                        x = x2,
+                        dx = (x1 - x2) / (y1 - y2),
+                        winding = -1
+                    }
+                end
+                table.insert(edges, edge)
+            end
+        end
+    end
+    
+    if #edges == 0 then
+        return pixels
+    end
+    
+    -- Find Y bounds
+    local minY, maxY = math.huge, -math.huge
+    for _, edge in ipairs(edges) do
+        minY = math.min(minY, edge.yMin)
+        maxY = math.max(maxY, edge.yMax)
+    end
+    
+    minY = math.max(0, minY)
+    maxY = math.min(height - 1, maxY)
+    
+    -- Process each scanline
+    for y = minY, maxY do
+        local crossings = {}
+        
+        for _, edge in ipairs(edges) do
+            if y >= edge.yMin and y < edge.yMax then
+                local x = edge.x + (y + 0.5 - edge.yMin) * edge.dx
+                table.insert(crossings, {x = x, winding = edge.winding})
+            end
+        end
+        
+        table.sort(crossings, function(a, b) return a.x < b.x end)
+        
+        local windingCount = 0
+        local fillStart = nil
+        
+        for i, crossing in ipairs(crossings) do
+            local prevWinding = windingCount
+            windingCount = windingCount + crossing.winding
+            
+            if prevWinding == 0 and windingCount ~= 0 then
+                fillStart = crossing.x
+            end
+            
+            if prevWinding ~= 0 and windingCount == 0 and fillStart then
+                local epsilon = 0.0001
+                local xStart = math.max(0, math.floor(fillStart + epsilon))
+                local xEnd = math.min(width - 1, math.floor(crossing.x - epsilon))
+                
+                for x = xStart, xEnd do
+                    table.insert(pixels, {x = x, y = y, color = color})
+                end
+                
+                fillStart = nil
+            end
+        end
+    end
+    
+    return pixels
+end
+
+-- ============================================================================
 -- SUB-PATH HANDLING (for compound paths with multiple M commands)
 -- ============================================================================
 
@@ -478,7 +725,9 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     -- Track position across sub-paths for relative moves
     local lastX, lastY = 0, 0
     
-    -- Convert each sub-path to points and fill using scanline algorithm
+    -- Collect all sub-path points (for proper hole handling with winding rule)
+    local allPoints = {}
+    
     for _, subPath in ipairs(subPaths) do
         local points, endX, endY = subPathToPoints(subPath, scale, offsetX, offsetY, 
                                                     viewBox.x or 0, viewBox.y or 0, lastX, lastY)
@@ -488,20 +737,32 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
             lastX = endX or lastX
             lastY = endY or lastY
             
-            -- Choose rendering algorithm based on scale
-            local filledPixels
-            if scale == 1.0 then
-                -- Pixel-perfect 1:1 rendering: use integer-only algorithm
-                filledPixels = scanlineFillInteger(points, targetWidth, targetHeight, path.fill)
-            else
-                -- Scaled rendering: use non-zero winding rule (browser default)
-                filledPixels = scanlineFillNonZero(points, targetWidth, targetHeight, path.fill)
+            -- Add separator marker to distinguish sub-paths
+            if #allPoints > 0 then
+                table.insert(allPoints, {isSubPathEnd = true})
             end
             
-            for _, pixel in ipairs(filledPixels) do
-                if pixel and pixel.x and pixel.y and pixel.color then
-                    table.insert(pixels, pixel)
-                end
+            -- Add all points from this sub-path
+            for _, point in ipairs(points) do
+                table.insert(allPoints, point)
+            end
+        end
+    end
+    
+    -- Fill all sub-paths together using appropriate algorithm
+    if #allPoints >= 3 then
+        local filledPixels
+        if scale == 1.0 then
+            -- Pixel-perfect 1:1 rendering: use integer-only algorithm
+            filledPixels = scanlineFillIntegerMultiPath(allPoints, targetWidth, targetHeight, path.fill)
+        else
+            -- Scaled rendering: use non-zero winding rule (browser default)
+            filledPixels = scanlineFillNonZeroMultiPath(allPoints, targetWidth, targetHeight, path.fill)
+        end
+        
+        for _, pixel in ipairs(filledPixels) do
+            if pixel and pixel.x and pixel.y and pixel.color then
+                table.insert(pixels, pixel)
             end
         end
     end
