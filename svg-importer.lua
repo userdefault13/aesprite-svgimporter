@@ -24,11 +24,21 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
     -- Parse SVG
     local svgData = SVGParser.parse(svgContent)
     
-    -- Debug output
+    -- Debug output with color info
     local debugMsg = "Debug: Parsed " .. #svgData.elements .. " elements"
     if #svgData.elements > 0 then
         debugMsg = debugMsg .. "\nFirst element: " .. svgData.elements[1].type .. " with " .. #svgData.elements[1].pathCommands .. " commands"
-        debugMsg = debugMsg .. "\nFill color: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        
+        -- Show color variety
+        local colors = {}
+        for _, elem in ipairs(svgData.elements) do
+            local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
+            colors[colorKey] = (colors[colorKey] or 0) + 1
+        end
+        local colorCount = 0
+        for _ in pairs(colors) do colorCount = colorCount + 1 end
+        debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
     end
     app.alert(debugMsg)
     
@@ -68,11 +78,21 @@ local function importFromCode(svgCode, canvasWidth, canvasHeight)
     -- Parse SVG
     local svgData = SVGParser.parse(svgCode)
     
-    -- Debug output
+    -- Debug output with color info
     local debugMsg = "Debug: Parsed " .. #svgData.elements .. " elements"
     if #svgData.elements > 0 then
         debugMsg = debugMsg .. "\nFirst element: " .. svgData.elements[1].type .. " with " .. #svgData.elements[1].pathCommands .. " commands"
-        debugMsg = debugMsg .. "\nFill color: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        
+        -- Show color variety
+        local colors = {}
+        for _, elem in ipairs(svgData.elements) do
+            local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
+            colors[colorKey] = (colors[colorKey] or 0) + 1
+        end
+        local colorCount = 0
+        for _ in pairs(colors) do colorCount = colorCount + 1 end
+        debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
     end
     app.alert(debugMsg)
     
