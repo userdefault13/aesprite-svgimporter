@@ -1,0 +1,244 @@
+[2025-10-27 23:26:00] [INFO] Batch SVG Import Started
+[2025-10-27 23:26:00] [INFO] Config: input=1,2,22, output=test_output2, view=0 (front), size=64x64
+[2025-10-27 23:26:00] [INFO] ---
+[2025-10-27 23:26:00] [INFO] Found 34 SVG files to process
+[2025-10-27 23:26:00] [INFO] Processing: 1_CamoHatLeft.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 1 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 30x12
+[2025-10-27 23:26:00] [INFO] Rendered 691 pixels
+[2025-10-27 23:26:00] [INFO] Placed 691 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/1_CamoHatLeft_front.aseprite (Time: 0.01s)
+[2025-10-27 23:26:00] [INFO] [OK] 1_CamoHatLeft.svg → 1_CamoHatLeft_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 1_CamoHatBack.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 1 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 34x12
+[2025-10-27 23:26:00] [INFO] Rendered 828 pixels
+[2025-10-27 23:26:00] [INFO] Placed 828 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/1_CamoHatBack_front.aseprite (Time: 0.01s)
+[2025-10-27 23:26:00] [INFO] [OK] 1_CamoHatBack.svg → 1_CamoHatBack_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 1_CamoHatRight.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 1 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 30x12
+[2025-10-27 23:26:00] [INFO] Rendered 691 pixels
+[2025-10-27 23:26:00] [INFO] Placed 691 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/1_CamoHatRight_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 1_CamoHatRight.svg → 1_CamoHatRight_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 1_CamoHat.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 1 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 34x20
+[2025-10-27 23:26:00] [INFO] Rendered 1357 pixels
+[2025-10-27 23:26:00] [INFO] Placed 1357 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/1_CamoHat_front.aseprite (Time: 0.01s)
+[2025-10-27 23:26:00] [INFO] [OK] 1_CamoHat.svg → 1_CamoHat_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 2_CamoPants.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 2 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 34x14
+[2025-10-27 23:26:00] [INFO] Rendered 846 pixels
+[2025-10-27 23:26:00] [INFO] Placed 846 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/2_CamoPants_front.aseprite (Time: 0.01s)
+[2025-10-27 23:26:00] [INFO] [OK] 2_CamoPants.svg → 2_CamoPants_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 2_CamoPantsRight.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 2 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x14
+[2025-10-27 23:26:00] [INFO] Rendered 632 pixels
+[2025-10-27 23:26:00] [INFO] Placed 632 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/2_CamoPantsRight_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 2_CamoPantsRight.svg → 2_CamoPantsRight_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 2_CamoPantsBack.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 2 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 34x14
+[2025-10-27 23:26:00] [INFO] Rendered 811 pixels
+[2025-10-27 23:26:00] [INFO] Placed 811 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/2_CamoPantsBack_front.aseprite (Time: 0.01s)
+[2025-10-27 23:26:00] [INFO] [OK] 2_CamoPantsBack.svg → 2_CamoPantsBack_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 2_CamoPantsLeft.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 2 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x14
+[2025-10-27 23:26:00] [INFO] Rendered 623 pixels
+[2025-10-27 23:26:00] [INFO] Placed 623 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/2_CamoPantsLeft_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 2_CamoPantsLeft.svg → 2_CamoPantsLeft_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRight_Side.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 9x10
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRight_Side_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRight_Side.svg → 22_CaptainAaveSuitRight_Side_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitBackLeft.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 95 pixels
+[2025-10-27 23:26:00] [INFO] Placed 95 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitBackLeft_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitBackLeft.svg → 22_CaptainAaveSuitBackLeft_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeft_Back.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 8x10
+[2025-10-27 23:26:00] [INFO] Rendered 106 pixels
+[2025-10-27 23:26:00] [INFO] Placed 106 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeft_Back_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeft_Back.svg → 22_CaptainAaveSuitLeft_Back_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeft_Back_Up.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 8x10
+[2025-10-27 23:26:00] [INFO] Rendered 106 pixels
+[2025-10-27 23:26:00] [INFO] Placed 106 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeft_Back_Up_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeft_Back_Up.svg → 22_CaptainAaveSuitLeft_Back_Up_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitBackLeftUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitBackLeftUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitBackLeftUp.svg → 22_CaptainAaveSuitBackLeftUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideLeftDown.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideLeftDown_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideLeftDown.svg → 22_CaptainAaveSuitSideLeftDown_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRightUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRightUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRightUp.svg → 22_CaptainAaveSuitRightUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideRightUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideRightUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideRightUp.svg → 22_CaptainAaveSuitSideRightUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideLeft.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 926 pixels
+[2025-10-27 23:26:00] [INFO] Placed 926 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideLeft_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideLeft.svg → 22_CaptainAaveSuitSideLeft_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuit_Right.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x22
+[2025-10-27 23:26:00] [INFO] Rendered 926 pixels
+[2025-10-27 23:26:00] [INFO] Placed 926 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuit_Right_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuit_Right.svg → 22_CaptainAaveSuit_Right_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuit.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 862 pixels
+[2025-10-27 23:26:00] [INFO] Placed 862 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuit_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuit.svg → 22_CaptainAaveSuit_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideRightDown.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideRightDown_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideRightDown.svg → 22_CaptainAaveSuitSideRightDown_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRight_Back_Up.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 8x10
+[2025-10-27 23:26:00] [INFO] Rendered 106 pixels
+[2025-10-27 23:26:00] [INFO] Placed 106 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRight_Back_Up_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRight_Back_Up.svg → 22_CaptainAaveSuitRight_Back_Up_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideRight.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 926 pixels
+[2025-10-27 23:26:00] [INFO] Placed 926 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideRight_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideRight.svg → 22_CaptainAaveSuitSideRight_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeft_Side.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 9x10
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeft_Side_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeft_Side.svg → 22_CaptainAaveSuitLeft_Side_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRight_Back.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 8x10
+[2025-10-27 23:26:00] [INFO] Rendered 106 pixels
+[2025-10-27 23:26:00] [INFO] Placed 106 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRight_Back_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRight_Back.svg → 22_CaptainAaveSuitRight_Back_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitBack.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 1426 pixels
+[2025-10-27 23:26:00] [INFO] Placed 1426 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitBack_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitBack.svg → 22_CaptainAaveSuitBack_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeftUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeftUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeftUp.svg → 22_CaptainAaveSuitLeftUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRight.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRight_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRight.svg → 22_CaptainAaveSuitRight_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeft.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeft_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeft.svg → 22_CaptainAaveSuitLeft_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuit_Left.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x22
+[2025-10-27 23:26:00] [INFO] Rendered 926 pixels
+[2025-10-27 23:26:00] [INFO] Placed 926 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuit_Left_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuit_Left.svg → 22_CaptainAaveSuit_Left_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitRight_Side_Up.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 10x9
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitRight_Side_Up_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitRight_Side_Up.svg → 22_CaptainAaveSuitRight_Side_Up_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitLeft_Side_Up.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 10x9
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitLeft_Side_Up_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitLeft_Side_Up.svg → 22_CaptainAaveSuitLeft_Side_Up_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitBackRightUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 87 pixels
+[2025-10-27 23:26:00] [INFO] Placed 87 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitBackRightUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitBackRightUp.svg → 22_CaptainAaveSuitBackRightUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitSideLeftUp.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 24x27
+[2025-10-27 23:26:00] [INFO] Rendered 118 pixels
+[2025-10-27 23:26:00] [INFO] Placed 118 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitSideLeftUp_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitSideLeftUp.svg → 22_CaptainAaveSuitSideLeftUp_front.aseprite
+[2025-10-27 23:26:00] [INFO] Processing: 22_CaptainAaveSuitBackRight.svg
+[2025-10-27 23:26:00] [INFO] Wearable ID: 22 (Unknown), View: 1, Offset: (0,0)
+[2025-10-27 23:26:00] [INFO] Native SVG size: 50x24
+[2025-10-27 23:26:00] [INFO] Rendered 95 pixels
+[2025-10-27 23:26:00] [INFO] Placed 95 pixels on 64x64 canvas
+[2025-10-27 23:26:00] [INFO] Saved: test_output2/22_CaptainAaveSuitBackRight_front.aseprite (Time: 0.00s)
+[2025-10-27 23:26:00] [INFO] [OK] 22_CaptainAaveSuitBackRight.svg → 22_CaptainAaveSuitBackRight_front.aseprite
+[2025-10-27 23:26:00] [INFO] ---
+[2025-10-27 23:26:00] [INFO] Summary: 34/34 successful (100.0%), Total time: 0.15s

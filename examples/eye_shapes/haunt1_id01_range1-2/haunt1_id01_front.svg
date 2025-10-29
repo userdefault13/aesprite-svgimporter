@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .gotchi-primary { fill: #FF6B9D; }
+      .gotchi-secondary { fill: #F4AFDD; }
+      .gotchi-eyeColor { fill: #36818E; }
+      .gotchi-cheek { fill: #F696C6; }
+      .gotchi-shadow { fill: #000000; }
+    </style>
+  </defs>
+  <g class="gotchi-eyeColor"><g class="gotchi-primary"><path d="M23 22h-1v1h1v-1zm5 5h-1v1h1v-1zm-5-1h-1v1h1v-1z" /><path d="M22 25h-1v1h1v-1zm0-2h-1v1h1v-1z" /></g><path d="M23 24h-1v1h1v-1z" /><path d="M27 22h-1v1h1v-1z" class="gotchi-primary" /><path d="M25 22h-1v1h1v-1zm2 4h-1v1h1v-1z" /><path d="M29 26h-1v1h1v-1z" class="gotchi-primary" /><path d="M25 26h-1v1h1v-1z" /><path d="M29 24h-1v1h1v-1z" class="gotchi-primary" /><path d="M25 24h-1v1h1v-1zm2 0h-1v1h1v-1z" /><path d="M27 28h-1v1h1v-1zm-2 0h-1v1h1v-1zm1-7h-1v1h1v-1zm-2 0h-1v1h1v-1z" class="gotchi-primary" /><path d="M28 25h-1v1h1v-1zm-2 0h-1v1h1v-1zm-2 0h-1v1h1v-1z" /><path d="M28 23h-1v1h1v-1z" class="gotchi-primary" /><path d="M24 23h-1v1h1v-1zm2 0h-1v1h1v-1zm0 4h-1v1h1v-1z" /><g class="gotchi-primary"> <path d="M24 27h-1v1h1v-1zm18-5h-1v1h1v-1zm-5 5h-1v1h1v-1zm5-1h-1v1h1v-1z" /><path d="M43 25h-1v1h1v-1z" /></g> <path d="M42 24h-1v1h1v-1z" /><path d="M43 23h-1v1h1v-1zm-5-1h-1v1h1v-1z" class="gotchi-primary" /><g> <path d="M37 25h-1v1h1v-1zm4 0h-1v1h1v-1z" /><path d="M38 26h-1v1h1v-1z" /></g> <path d="M37 23h-1v1h1v-1z" class="gotchi-primary" /><path d="M38 24h-1v1h1v-1zm3-1h-1v1h1v-1z" /><path d="M38 28h-1v1h1v-1z" class="gotchi-primary" /><path d="M39 23h-1v1h1v-1z" /><path d="M39 21h-1v1h1v-1z" class="gotchi-primary" /><path d="M40 22h-1v1h1v-1z" /><path d="M41 21h-1v1h1v-1z" class="gotchi-primary" /><g> <path d="M40 26h-1v1h1v-1z" /><path d="M39 25h-1v1h1v-1z" /></g> <path d="M36 26h-1v1h1v-1zm0-2h-1v1h1v-1z" class="gotchi-primary" /><path d="M40 24h-1v1h1v-1z" /><g class="gotchi-primary"> <path d="M41 27h-1v1h1v-1z" /><path d="M40 28h-1v1h1v-1z" /></g> <path d="M39 27h-1v1h1v-1z" /></g>
+</svg>

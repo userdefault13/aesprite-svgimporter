@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .gotchi-primary { fill: #FF6B9D; }
+      .gotchi-secondary { fill: #F4AFDD; }
+      .gotchi-eyeColor { fill: #36818E; }
+      .gotchi-cheek { fill: #F696C6; }
+      .gotchi-shadow { fill: #000000; }
+    </style>
+  </defs>
+  <g class="gotchi-eyeColor"><g><path d="M23 25h-1v1h1v-1z" /><path d="M23 24h-1v1h1v-1zm4 2h-1v1h1v-1zm-3 0h-1v1h1v-1z" /><path d="M25 26h-1v1h1v-1zm2-1h-1v1h1v-1zm-3-1h-1v1h1v-1zm3-1h-1v1h1v-1z" /><path d="M28 24h-1v1h1v-1zm-3-1h-1v1h1v-1z" /><path d="M27 24h-1v1h1v-1z" /></g><path d="M27 28h-1v1h1v-1zm0-7h-1v1h1v-1zm-3 0h-1v1h1v-1z" class="gotchi-primary" /><path d="M26 26h-1v1h1v-1zm2-1h-1v1h1v-1zm-4 0h-1v1h1v-1zm0-2h-1v1h1v-1zm2 0h-1v1h1v-1z" /><path d="M24 28h-1v1h1v-1z" class="gotchi-primary" /><g><path d="M42 25h-1v1h1v-1z" /><path d="M42 24h-1v1h1v-1zm-5 1h-1v1h1v-1z" /><path d="M39 26h-1v1h1v-1zm2-1h-1v1h1v-1z" /><path d="M38 26h-1v1h1v-1zm-1-2h-1v1h1v-1z" /><path d="M38 24h-1v1h1v-1zm3-1h-1v1h1v-1z" /></g><path d="M38 28h-1v1h1v-1zm3 0h-1v1h1v-1z" class="gotchi-primary" /><path d="M38 23h1v1h-1" /><path d="M38 21h-1v1h1v-1zm3 0h-1v1h1v-1z" class="gotchi-primary" /><g><path d="M38 25h-1v1h1v-1zm3 1h-1v1h1v-1z" /><path d="M40 26h-1v1h1v-1zm-2-3h-1v1h1v-1zm3 1h-1v1h1v-1z" /><path d="M40 23h-1v1h1v-1z" /></g></g>
+</svg>

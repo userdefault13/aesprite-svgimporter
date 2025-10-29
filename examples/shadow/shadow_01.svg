@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .gotchi-primary { fill: #FF6B9D; }
+      .gotchi-secondary { fill: #F4AFDD; }
+      .gotchi-cheek { fill: #F696C6; }
+      .gotchi-primary-mouth { fill: #FF6B9D; }
+      .gotchi-shadow { fill: #000000; }
+      .gotchi-handsDownClosed { display: block; }
+      .gotchi-handsDownOpen { display: none; }
+      .gotchi-handsUp { display: none; }
+      .gotchi-body { display: block; }
+    </style>
+  </defs>
+  <g class="gotchi-shadow"><path d="M23 58v1h1v1h16v-1h1v-1z" opacity=".25"/></g>
+</svg>

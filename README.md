@@ -102,6 +102,178 @@ svg-importer/
 
 **Performance issues?** Large SVGs use floating-point algorithm; consider breaking into smaller files.
 
+## Batch Processing
+
+The SVG importer now includes a powerful CLI-based batch processing tool for converting multiple SVGs to Aseprite files with metadata-driven positioning.
+
+### Features
+
+✅ **Batch directory processing** - Process all SVGs in a directory  
+✅ **Specific file processing** - Process individual files by ID  
+✅ **Multi-view support** - Front, left, right, back views with proper offsets  
+✅ **Metadata-driven positioning** - Uses Aavegotchi wearables database for accurate placement  
+✅ **Comprehensive logging** - Detailed logs with timing and error reporting  
+✅ **Flexible output sizing** - Configurable canvas sizes (default 64x64)  
+
+### Installation
+
+1. Ensure you have Aseprite CLI installed and in your PATH
+2. Place all required files in your project directory:
+   - `batch-svg-importer.lua`
+   - `batch-config.lua`
+   - `json-metadata-loader.lua`
+   - `aavegotchi_db_wearables.json`
+   - `batch-process.sh` (make executable: `chmod +x batch-process.sh`)
+
+### Usage
+
+#### Shell Script (Recommended)
+
+```bash
+# Process all SVGs in examples/ directory, front view
+./batch-process.sh examples output 0
+
+# Process all SVGs in examples/ directory, left view
+./batch-process.sh examples output 1
+
+# Process specific wearable IDs, front view
+./batch-process.sh "1,2,22" output 0
+
+# Process with custom canvas size (32x32)
+./batch-process.sh examples output 0 32
+
+# Show help
+./batch-process.sh --help
+```
+
+#### Direct Aseprite CLI
+
+```bash
+# Process directory
+aseprite -b --script batch-svg-importer.lua -- examples output 0
+
+# Process specific files
+aseprite -b --script batch-svg-importer.lua -- "1,2,22" output 1
+
+# Custom size
+aseprite -b --script batch-svg-importer.lua -- examples output 0 32
+```
+
+### Arguments
+
+- **input_path**: Directory path or comma-separated file list (e.g., `examples` or `1,2,22`)
+- **output_dir**: Directory to save .aseprite files
+- **view_index**: View index (0=front, 1=left, 2=right, 3=back)
+- **target_size**: Final canvas size (default: 64)
+
+### View Mapping
+
+The batch processor supports four views with proper offset positioning:
+
+| Index | View | Description |
+|-------|------|-------------|
+| 0 | Front | Default front-facing view |
+| 1 | Left | Left side view |
+| 2 | Right | Right side view |
+| 3 | Back | Back-facing view |
+
+### File Naming
+
+- **Input**: `{id}_{name}.svg` (e.g., `1_CamoHat.svg`)
+- **Output**: `{id}_{name}_{view}.aseprite` (e.g., `1_CamoHat_front.aseprite`)
+
+### Offset Positioning
+
+The batch processor uses metadata from `aavegotchi_db_wearables.json` to position SVGs correctly:
+
+1. **Native rendering**: SVG renders at its natural size
+2. **Offset application**: Top-left corner positioned at `(offset.x, offset.y)` on target canvas
+3. **Canvas creation**: Creates target-size canvas with transparent background
+4. **Pixel placement**: Places rendered pixels with proper offset, clipping to canvas bounds
+
+### Logging
+
+The batch processor creates detailed logs in `batch_import_log.txt`:
+
+```
+[2025-10-27 10:30:15] [INFO] Batch SVG Import Started
+[2025-10-27 10:30:15] [INFO] Config: input=examples, output=output, view=0 (front), size=64x64
+[2025-10-27 10:30:15] [INFO] ---
+[2025-10-27 10:30:15] [INFO] Processing: 1_CamoHat.svg
+[2025-10-27 10:30:15] [INFO] Wearable ID: 1 (Camo Hat), View: 1, Offset: (15,2)
+[2025-10-27 10:30:15] [INFO] Native SVG size: 34x20
+[2025-10-27 10:30:15] [INFO] Rendered 4523 pixels
+[2025-10-27 10:30:15] [INFO] Placed 4523 pixels on 64x64 canvas
+[2025-10-27 10:30:15] [INFO] Saved: output/1_CamoHat_front.aseprite (Time: 0.32s)
+[2025-10-27 10:30:15] [INFO] [OK] 1_CamoHat.svg → 1_CamoHat_front.aseprite
+[2025-10-27 10:30:15] [INFO] ---
+[2025-10-27 10:30:15] [INFO] Summary: 8/9 successful (88.9%), Total time: 2.4s
+```
+
+### Configuration
+
+Modify `batch-config.lua` to customize behavior:
+
+```lua
+return {
+  metadata_file = "aavegotchi_db_wearables.json",
+  default_target_size = 64,
+  default_view_index = 0,  -- front
+  log_file = "batch_import_log.txt",
+  views = {"front", "left", "right", "back"},
+  max_errors = 100,
+  continue_on_error = true
+}
+```
+
+### Troubleshooting
+
+**"Aseprite CLI not found"**
+- Ensure Aseprite is installed and `aseprite` command is in your PATH
+- On macOS: Add Aseprite to Applications and create symlink: `sudo ln -s /Applications/Aseprite.app/Contents/MacOS/Aseprite /usr/local/bin/aseprite`
+
+**"No metadata found for wearable ID"**
+- Check that `aavegotchi_db_wearables.json` exists and contains the wearable ID
+- Verify filename format: `{id}_{name}.svg`
+
+**"Could not parse SVG"**
+- Ensure SVG files are valid and readable
+- Check that SVG contains proper viewBox attribute
+
+**"No pixels rendered"**
+- Verify SVG contains visible path elements
+- Check that paths have valid fill colors
+
+**Performance issues**
+- Large SVGs take longer to process
+- Consider processing smaller batches
+- Monitor `batch_import_log.txt` for timing information
+
+### Examples
+
+Process all examples with different views:
+
+```bash
+# Front view
+./batch-process.sh examples output_front 0
+
+# Left view  
+./batch-process.sh examples output_left 1
+
+# Right view
+./batch-process.sh examples output_right 2
+
+# Back view
+./batch-process.sh examples output_back 3
+```
+
+Process specific wearables:
+
+```bash
+# Process Camo Hat, Captain Aave Suit, and 3D Glasses
+./batch-process.sh "1,22,351" output 0
+```
+
 ## License
 
 Open source - feel free to modify and distribute.

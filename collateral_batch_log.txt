@@ -1,0 +1,1363 @@
+[2025-10-28 16:34:05] [INFO] Starting collateral color batch processing
+[2025-10-28 16:34:05] [INFO] Output directory: output
+[2025-10-28 16:34:05] [INFO] Target size: 64x64
+[2025-10-28 16:34:05] [INFO] Loaded 16 collateral color sets
+[2025-10-28 16:34:05] [INFO] Loaded main SVG templates
+[2025-10-28 16:34:05] [INFO] Processing template type: body (4 variants)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maDAI with maDAI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maDAI (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maWETH with maWETH colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maWETH (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maAAVE (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maLINK with maLINK colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maLINK.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maLINK (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maUSDT (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maUSDC (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maTUSD.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maTUSD (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maUNI with maUNI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maUNI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maUNI (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_maYFI with maYFI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_maYFI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> maYFI (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amDAI with amDAI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amDAI (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amWETH with amWETH colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amWETH (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amAAVE (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amUSDT (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amUSDC (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amWBTC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amWBTC (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 1608 pixels
+[2025-10-28 16:34:05] [INFO] Placed 1608 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_00_amWMATIC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_00 -> amWMATIC (1608 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maDAI with maDAI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maDAI (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maWETH with maWETH colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maWETH (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maAAVE with maAAVE colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maAAVE (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maLINK with maLINK colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maLINK.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maLINK (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maUSDT with maUSDT colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maUSDT (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maUSDC with maUSDC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maUSDC (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maTUSD with maTUSD colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maTUSD.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maTUSD (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maUNI with maUNI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maUNI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maUNI (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_maYFI with maYFI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_maYFI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> maYFI (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amDAI with amDAI colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amDAI (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amWETH with amWETH colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amWETH (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amAAVE with amAAVE colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amAAVE (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amUSDT with amUSDT colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amUSDT (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amUSDC with amUSDC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amUSDC (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amWBTC with amWBTC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:05] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:05] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:05] [INFO] Saved: output/body_01_amWBTC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:05] [INFO] Success: body_01 -> amWBTC (2850 pixels, 0.01s)
+[2025-10-28 16:34:05] [INFO] Processing: body_01_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:05] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_01_amWMATIC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_01 -> amWMATIC (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maDAI (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maWETH (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maAAVE (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maLINK.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maLINK (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maUSDT (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maUSDC (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maTUSD.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maTUSD (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maUNI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maUNI (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_maYFI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> maYFI (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amDAI (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amWETH (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amAAVE (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amUSDT (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amUSDC (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amWBTC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amWBTC (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_02_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 2850 pixels
+[2025-10-28 16:34:06] [INFO] Placed 2850 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_02_amWMATIC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_02 -> amWMATIC (2850 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maDAI (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maWETH (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maAAVE (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maLINK.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maLINK (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maUSDT (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maUSDC (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maTUSD.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maTUSD (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maUNI (1580 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_maYFI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> maYFI (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amDAI (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amWETH (1580 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amAAVE.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amAAVE (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amUSDT (1580 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amUSDC (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amWBTC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amWBTC (1580 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: body_03_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 1580 pixels
+[2025-10-28 16:34:06] [INFO] Placed 1580 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/body_03_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: body_03 -> amWMATIC (1580 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing template type: hands (4 variants)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maDAI (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maWETH (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maAAVE (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maLINK.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maLINK (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maUSDT (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maUSDC (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maTUSD (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maUNI (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_maYFI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> maYFI (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amDAI (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amWETH.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amWETH (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amAAVE (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amUSDT.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amUSDT (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amUSDC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amUSDC (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amWBTC (270 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 270 pixels
+[2025-10-28 16:34:06] [INFO] Placed 270 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_00_amWMATIC.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_00 -> amWMATIC (270 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maDAI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maWETH (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maAAVE (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maLINK (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maUSDT (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maUSDC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maTUSD (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maUNI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> maYFI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amDAI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amWETH (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amAAVE (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amUSDT (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amUSDC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amWBTC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_01_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_01_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_01 -> amWMATIC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maDAI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maWETH (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maAAVE (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maLINK (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maUSDT (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maUSDC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maTUSD (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maUNI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> maYFI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amDAI (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amWETH (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amAAVE (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amUSDT (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amUSDC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amWBTC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_02_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 108 pixels
+[2025-10-28 16:34:06] [INFO] Placed 108 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_02_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_02 -> amWMATIC (108 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maDAI (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maWETH (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maAAVE (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maLINK (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maUSDT (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maUSDC (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maTUSD (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maUNI (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> maYFI (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amDAI.aseprite (Time: 0.01s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amDAI (212 pixels, 0.01s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amWETH (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amAAVE (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amUSDT (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amUSDC (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amWBTC (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: hands_03_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 212 pixels
+[2025-10-28 16:34:06] [INFO] Placed 212 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/hands_03_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: hands_03 -> amWMATIC (212 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing template type: mouth_neutral (1 variants)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maDAI (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maWETH (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maAAVE (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maLINK (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maUSDT (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maUSDC (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maTUSD (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maUNI (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> maYFI (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amDAI (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amWETH (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amAAVE (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amUSDT (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amUSDC (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amWBTC (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_neutral_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 12 pixels
+[2025-10-28 16:34:06] [INFO] Placed 12 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_neutral_00_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_neutral_00 -> amWMATIC (12 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing template type: mouth_happy (1 variants)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maDAI (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maWETH (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maAAVE (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maLINK (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maUSDT (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maUSDC (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maTUSD (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maUNI (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> maYFI (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amDAI (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amWETH (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amAAVE (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amUSDT (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amUSDC (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amWBTC (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: mouth_happy_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 20 pixels
+[2025-10-28 16:34:06] [INFO] Placed 20 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/mouth_happy_00_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: mouth_happy_00 -> amWMATIC (20 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing template type: eyes_mad (1 variants)
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maLINK
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maLINK
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maTUSD
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maTUSD
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maUNI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maUNI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_maYFI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> maYFI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amWBTC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amWBTC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_mad_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_mad_00_amWMATIC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_mad_00 -> amWMATIC
+[2025-10-28 16:34:06] [INFO] Processing template type: eyes_happy (1 variants)
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maLINK
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maLINK
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maTUSD
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maTUSD
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maUNI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maUNI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_maYFI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> maYFI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amWBTC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amWBTC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_happy_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_happy_00_amWMATIC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_happy_00 -> amWMATIC
+[2025-10-28 16:34:06] [INFO] Processing template type: eyes_sleepy (1 variants)
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maLINK
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maLINK
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maTUSD
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maTUSD
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maUNI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maUNI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_maYFI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> maYFI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amDAI
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amDAI
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amWETH
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amWETH
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amAAVE
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amAAVE
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amUSDT
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amUSDT
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amUSDC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amUSDC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amWBTC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amWBTC
+[2025-10-28 16:34:06] [INFO] Processing: eyes_sleepy_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [ERROR] No pixels rendered from SVG: eyes_sleepy_00_amWMATIC
+[2025-10-28 16:34:06] [ERROR] Failed: eyes_sleepy_00 -> amWMATIC
+[2025-10-28 16:34:06] [INFO] Processing template type: shadow (2 variants)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maDAI (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maWETH (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maAAVE (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maLINK (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maUSDT (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maUSDC (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maTUSD (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maUNI (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> maYFI (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amDAI (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amWETH (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amAAVE (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amUSDT (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amUSDC (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amWBTC (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_00_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 50 pixels
+[2025-10-28 16:34:06] [INFO] Placed 50 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_00_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_00 -> amWMATIC (50 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maDAI with maDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maDAI (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maWETH with maWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maWETH (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maAAVE with maAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maAAVE (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maLINK with maLINK colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maLINK.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maLINK (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maUSDT with maUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maUSDT (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maUSDC with maUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maUSDC (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maTUSD with maTUSD colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maTUSD.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maTUSD (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maUNI with maUNI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maUNI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maUNI (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_maYFI with maYFI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_maYFI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> maYFI (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amDAI with amDAI colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amDAI.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amDAI (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amWETH with amWETH colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amWETH.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amWETH (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amAAVE with amAAVE colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amAAVE.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amAAVE (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amUSDT with amUSDT colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amUSDT.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amUSDT (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amUSDC with amUSDC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amUSDC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amUSDC (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amWBTC with amWBTC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amWBTC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amWBTC (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Processing: shadow_01_amWMATIC with amWMATIC colors
+[2025-10-28 16:34:06] [INFO] Native SVG size: 64x64
+[2025-10-28 16:34:06] [INFO] Rendered 34 pixels
+[2025-10-28 16:34:06] [INFO] Placed 34 pixels on 64x64 canvas
+[2025-10-28 16:34:06] [INFO] Saved: output/shadow_01_amWMATIC.aseprite (Time: 0.00s)
+[2025-10-28 16:34:06] [INFO] Success: shadow_01 -> amWMATIC (34 pixels, 0.00s)
+[2025-10-28 16:34:06] [INFO] Batch processing completed
+[2025-10-28 16:34:06] [INFO] Total files processed: 240
+[2025-10-28 16:34:06] [INFO] Successful: 192
+[2025-10-28 16:34:06] [INFO] Errors: 48
+[2025-10-28 16:34:06] [INFO] Total time: 0.82s
+[2025-10-28 16:34:06] [INFO] Average time per file: 0.00s

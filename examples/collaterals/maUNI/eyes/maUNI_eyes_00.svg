@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .gotchi-primary { fill: 0xff2a7a; }
+      .gotchi-secondary { fill: 0xffc3df; }
+      .gotchi-cheek { fill: 0xf696c6; }
+      .gotchi-collateral { fill: 0xff2a7a; }
+      .gotchi-eyeColor { fill: 0xff2a7a; }
+      .gotchi-shadow { fill: #000000; }
+    </style>
+  </defs>
+  <g class="gotchi-eyeColor"><path d="M35,20h1v1h-1V20z" fill="#fff"/><path d="M37 22v-1h-1v2h2v-1zm0" fill="#ffdeec"/><g><path d="M36 20v-1h-1v-1h-1v3h1v-1z"/><path d="M36 20h1v1h-1z"/><path d="M37 21h1v1h-1z"/><path d="M40 24v-1h-1v-1h-1v1h-2v3h1v2h3v-1h1v-3h-1zm-3"/><path d="M35 21h1v2h-1z"/></g><path d="M22,20h1v1h-1V20z" fill="#fff"/><path d="M24 22v-1h-1v2h2v-1zm0" fill="#ffdeec"/><g><path d="M23 20v-1h-1v-1h-1v3h1v-1z"/><path d="M23 20h1v1h-1z"/><path d="M24 21h1v1h-1z"/><path d="M27 24v-1h-1v-1h-1v1h-2v3h1v2h3v-1h1v-3h-1zm-3"/><path d="M22 21h1v2h-1z"/></g></g>
+</svg>

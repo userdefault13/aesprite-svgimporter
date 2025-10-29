@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .gotchi-primary { fill: #FF6B9D; }
+      .gotchi-secondary { fill: #F4AFDD; }
+      .gotchi-eyeColor { fill: #36818E; }
+      .gotchi-cheek { fill: #F696C6; }
+      .gotchi-shadow { fill: #000000; }
+    </style>
+  </defs>
+  <g class="gotchi-eyeColor"><path d="M39 23v1h-1v-1h1v-1h-2v1h-1v2h1v1h2v-1h1v-2h-1z" /><g class="gotchi-primary"><path d="M34 25h-1v1h1v-1zm7 0v1h1v-2h-1v1zm-4-2v-1h-2v1h2z" /><path d="M44 21h-7v1h5v2h1v-1h1v-1h1v-1h-1zm-9 5h-1v1h2v-1h-1z" /><path d="M38 27h-2v1h4v-1h-2zm-3-3v-1h-1v2h1v-1z" /><path d="M41 26h-1v1h1v-1z" /></g><path d="M27 22h-2v1h1v1h-1v-1h-1v2h1v1h2v-1h1v-2h-1v-1z" /><g class="gotchi-primary"><path d="M31 25h-1v1h1v-1zm-8-1h-1v2h1v-2z" /><path d="M22 22h5v-1h-8v1h1v1h1v1h1v-2z" /><path d="M28 23h1v-1h-2v1h1zm0 3v1h2v-1h-2z" /><path d="M26 27h-2v1h4v-1h-2zm3-2h1v-2h-1v2z" /><path d="M24 26h-1v1h1v-1z" /></g></g>
+</svg>
