@@ -1,0 +1,1169 @@
+INFO: Using known fallback for amDAI (#ff7d00)
+Collateral for 'common': amDAI (#ff7d00)
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id00_range0-1/haunt1_id00_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id00_range0-1/haunt1_id00_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id00_range0-1/haunt1_id00_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id00_range0-1/haunt1_id00_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id01_range1-2/haunt1_id01_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id01_range1-2/haunt1_id01_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id01_range1-2/haunt1_id01_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id01_range1-2/haunt1_id01_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id02_range2-5/haunt1_id02_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id02_range2-5/haunt1_id02_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id02_range2-5/haunt1_id02_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id02_range2-5/haunt1_id02_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id03_range5-7/haunt1_id03_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id03_range5-7/haunt1_id03_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id03_range5-7/haunt1_id03_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id03_range5-7/haunt1_id03_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id04_range7-10/haunt1_id04_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id04_range7-10/haunt1_id04_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id04_range7-10/haunt1_id04_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id04_range7-10/haunt1_id04_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id05_range10-15/haunt1_id05_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id05_range10-15/haunt1_id05_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id05_range10-15/haunt1_id05_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id05_range10-15/haunt1_id05_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id06_range15-20/haunt1_id06_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id06_range15-20/haunt1_id06_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id06_range15-20/haunt1_id06_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id06_range15-20/haunt1_id06_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id07_range20-25/haunt1_id07_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id07_range20-25/haunt1_id07_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id07_range20-25/haunt1_id07_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id07_range20-25/haunt1_id07_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id08_range25-42/haunt1_id08_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id08_range25-42/haunt1_id08_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id08_range25-42/haunt1_id08_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id08_range25-42/haunt1_id08_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id09_range42-58/haunt1_id09_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id09_range42-58/haunt1_id09_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id09_range42-58/haunt1_id09_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id09_range42-58/haunt1_id09_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id10_range58-75/haunt1_id10_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id10_range58-75/haunt1_id10_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id10_range58-75/haunt1_id10_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id10_range58-75/haunt1_id10_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id11_range75-80/haunt1_id11_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id11_range75-80/haunt1_id11_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id11_range75-80/haunt1_id11_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id11_range75-80/haunt1_id11_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id12_range80-85/haunt1_id12_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id12_range80-85/haunt1_id12_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id12_range80-85/haunt1_id12_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id12_range80-85/haunt1_id12_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id13_range85-90/haunt1_id13_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id13_range85-90/haunt1_id13_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id13_range85-90/haunt1_id13_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id13_range85-90/haunt1_id13_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id14_range90-93/haunt1_id14_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id14_range90-93/haunt1_id14_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id14_range90-93/haunt1_id14_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id14_range90-93/haunt1_id14_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id15_range93-95/haunt1_id15_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id15_range93-95/haunt1_id15_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id15_range93-95/haunt1_id15_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id15_range93-95/haunt1_id15_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt1_id16_range95-98/haunt1_id16_front.svg
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id16_range95-98/haunt1_id16_left.svg
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt1_id16_range95-98/haunt1_id16_right.svg
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt1_id16_range95-98/haunt1_id16_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id00_range0-1/haunt2_id00_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id00_range0-1/haunt2_id00_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id00_range0-1/haunt2_id00_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id00_range0-1/haunt2_id00_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id01_range1-2/haunt2_id01_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id01_range1-2/haunt2_id01_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id01_range1-2/haunt2_id01_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id01_range1-2/haunt2_id01_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id02_range2-5/haunt2_id02_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id02_range2-5/haunt2_id02_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id02_range2-5/haunt2_id02_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id02_range2-5/haunt2_id02_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id03_range5-7/haunt2_id03_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id03_range5-7/haunt2_id03_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id03_range5-7/haunt2_id03_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id03_range5-7/haunt2_id03_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id04_range7-10/haunt2_id04_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id04_range7-10/haunt2_id04_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id04_range7-10/haunt2_id04_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id04_range7-10/haunt2_id04_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id05_range10-15/haunt2_id05_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id05_range10-15/haunt2_id05_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id05_range10-15/haunt2_id05_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id05_range10-15/haunt2_id05_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id06_range15-20/haunt2_id06_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id06_range15-20/haunt2_id06_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id06_range15-20/haunt2_id06_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id06_range15-20/haunt2_id06_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id07_range20-25/haunt2_id07_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id07_range20-25/haunt2_id07_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id07_range20-25/haunt2_id07_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id07_range20-25/haunt2_id07_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id08_range25-42/haunt2_id08_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id08_range25-42/haunt2_id08_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id08_range25-42/haunt2_id08_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id08_range25-42/haunt2_id08_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id09_range42-58/haunt2_id09_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id09_range42-58/haunt2_id09_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id09_range42-58/haunt2_id09_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id09_range42-58/haunt2_id09_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id10_range58-75/haunt2_id10_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id10_range58-75/haunt2_id10_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id10_range58-75/haunt2_id10_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id10_range58-75/haunt2_id10_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id11_range75-80/haunt2_id11_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id11_range75-80/haunt2_id11_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id11_range75-80/haunt2_id11_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id11_range75-80/haunt2_id11_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id12_range80-85/haunt2_id12_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id12_range80-85/haunt2_id12_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id12_range80-85/haunt2_id12_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id12_range80-85/haunt2_id12_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id13_range85-90/haunt2_id13_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id13_range85-90/haunt2_id13_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id13_range85-90/haunt2_id13_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id13_range85-90/haunt2_id13_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id14_range90-93/haunt2_id14_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id14_range90-93/haunt2_id14_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id14_range90-93/haunt2_id14_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id14_range90-93/haunt2_id14_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id15_range93-95/haunt2_id15_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id15_range93-95/haunt2_id15_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id15_range93-95/haunt2_id15_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id15_range93-95/haunt2_id15_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Processing: examples/eye_shapes/haunt2_id16_range95-98/haunt2_id16_front.svg
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_front_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id16_range95-98/haunt2_id16_left.svg
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_left_mythical_high.aseprite
+Processing: examples/eye_shapes/haunt2_id16_range95-98/haunt2_id16_right.svg
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_mythical_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_rare_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_uncommon_low.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_common.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_uncommon_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_rare_high.aseprite
+Skip existing: output/amDAI/eye shape/haunt2_id16_range95-98/haunt2_id16_right_mythical_high.aseprite
+grep: invalid option -- P
+usage: grep [-abcdDEFGHhIiJLlMmnOopqRSsUVvwXxZz] [-A num] [-B num] [-C[num]]
+	[-e pattern] [-f file] [--binary-files=value] [--color=when]
+	[--context[=num]] [--directories=action] [--label] [--line-buffered]
+	[--null] [pattern] [file ...]
+Done generating eye shape variants for amDAI.

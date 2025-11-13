@@ -21,6 +21,28 @@ A professional SVG importer plugin for Aseprite that handles complex pixel art S
 
 ## Usage
 
+
+### Batch: Generate Eye Shapes for All Collaterals
+
+A bash helper runs `eye-shapes-batch.lua` for every collateral found across Haunt 1/2 JSONs.
+
+```
+./batch-eye-shapes-all-collaterals.sh
+```
+
+- Skips collaterals that already have any eye-shape outputs in `output/<collateral>/eye shape/` by default.
+- Override the Aseprite CLI path if needed:
+
+```
+ASEPRITE_BIN="/usr/local/bin/aseprite" ./batch-eye-shapes-all-collaterals.sh
+```
+
+- To force regeneration for all collaterals (ignore existing outputs):
+
+```
+ONLY_MISSING=0 ./batch-eye-shapes-all-collaterals.sh
+```
+
 ### Auto Size (Recommended)
 - Select **"Auto (SVG Size)"** for pixel-perfect 1:1 rendering
 - Canvas dimensions match SVG viewBox exactly

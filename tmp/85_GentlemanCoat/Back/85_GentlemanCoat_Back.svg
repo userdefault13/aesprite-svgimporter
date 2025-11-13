@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g class="gotchi-wearable wearable-body"><svg x="12" y="32"><g><path d="M3,1v23h4v-2h5v2h5v-2h6v2h5v-2h5v2h4V1H3z" /><g class="gotchi-sleeves gotchi-sleeves-left gotchi-sleeves-up"><path d="M2,1V0H0v7h1v1h1v1h1.5V1H2z" /></g><svg width="40" height="23">
+  <g transform="translate(0 1)">
+    <path d="M3 0H1v1h1v1H1v1H0v7h2V9h1.5V1H3V0z" />
+  </g>
+</svg><g class="gotchi-sleeves gotchi-sleeves-right gotchi-sleeves-up"><path d="M38,0v1h-1.5v8H38V8h1V7h1V0H38z" /></g><svg width="40" height="23">
+  <path d="M37 1h-.5v8H38v1h2V3h-1V2h-1V1h1V0h-2v1z" transform="translate(0 1)" />
+</svg></g></svg></g></svg>

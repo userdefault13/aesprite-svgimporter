@@ -9,40 +9,80 @@ local metadataCache = nil
 -- Simple JSON parser using string patterns for this specific structure
 local function parseJson(jsonStr)
     local metadata = {wearables = {}}
-    
-    -- Extract wearables array using pattern matching
-    for wearable in jsonStr:gmatch('{"id":(%d+),.-?"previewoffsets":%[([^%]]+)%]') do
-        local id = tonumber(wearable)
-        if id then
-            local wearableData = {
-                id = id,
-                name = "Unknown",
-                previewoffsets = {}
-            }
-            
-            -- Extract name
-            local nameMatch = jsonStr:match('"id":' .. id .. ',.-?"name":"([^"]*)"')
-            if nameMatch then
-                wearableData.name = nameMatch
+
+    local wearablesKeyPos = jsonStr:find('"wearables"%s*:%s*%[')
+    if not wearablesKeyPos then
+        return metadata
+    end
+
+    local arrayStart = jsonStr:find("%[", wearablesKeyPos)
+    if not arrayStart then
+        return metadata
+    end
+
+    local depth = 0
+    local pos = arrayStart
+    repeat
+        local char = jsonStr:sub(pos, pos)
+        if char == "[" then
+            depth = depth + 1
+        elseif char == "]" then
+            depth = depth - 1
+        end
+        pos = pos + 1
+    until depth == 0 or pos > #jsonStr
+
+    if depth ~= 0 then
+        return metadata
+    end
+
+    local wearablesSection = jsonStr:sub(arrayStart + 1, pos - 2)
+    local index = 1
+    local length = #wearablesSection
+
+    while index <= length do
+        local startPos = wearablesSection:find("{", index, true)
+        if not startPos then break end
+
+        local depth = 0
+        local pos = startPos
+        repeat
+            local char = wearablesSection:sub(pos, pos)
+            if char == "{" then
+                depth = depth + 1
+            elseif char == "}" then
+                depth = depth - 1
             end
-            
-            -- Extract previewoffsets
-            local offsetsMatch = jsonStr:match('"id":' .. id .. ',.-?"previewoffsets":%[([^%]]+)%]')
-            if offsetsMatch then
-                local offsetIndex = 1
-                for x, y in offsetsMatch:gmatch('{"x":"([^"]*)","y":"([^"]*)"}') do
-                    wearableData.previewoffsets[offsetIndex] = {
-                        x = tonumber(x) or 0,
-                        y = tonumber(y) or 0
-                    }
-                    offsetIndex = offsetIndex + 1
+            pos = pos + 1
+        until depth == 0 or pos > length
+
+        local objectStr = wearablesSection:sub(startPos, pos - 1)
+        index = pos
+
+        if objectStr:find('"id"%s*:') then
+            local id = tonumber(objectStr:match('"id"%s*:%s*(%d+)'))
+            if id then
+                local wearableData = {
+                    id = id,
+                    name = objectStr:match('"name"%s*:%s*"([^"]*)"') or "Unknown",
+                    previewoffsets = {}
+                }
+
+                local previewSection = objectStr:match('"previewoffsets"%s*:%s*%[([%s%S]-)%]')
+                if previewSection then
+                    for x, y in previewSection:gmatch('"x"%s*:%s*"([^"]*)"%s*,%s*"y"%s*:%s*"([^"]*)"') do
+                        table.insert(wearableData.previewoffsets, {
+                            x = tonumber(x) or 0,
+                            y = tonumber(y) or 0
+                        })
+                    end
                 end
+
+                metadata.wearables[id] = wearableData
             end
-            
-            metadata.wearables[id] = wearableData
         end
     end
-    
+
     return metadata
 end
 
@@ -75,16 +115,8 @@ local function loadMetadata()
         return nil
     end
     
-    -- Index wearables by ID for quick lookup
-    local indexedMetadata = {}
-    if metadata and metadata.wearables then
-        for _, wearable in ipairs(metadata.wearables) do
-            if wearable.id then
-                indexedMetadata[wearable.id] = wearable
-            end
-        end
-    end
-    
+    -- The parser already indexes wearables by id, just reuse it directly.
+    local indexedMetadata = (metadata and metadata.wearables) or {}
     metadataCache = indexedMetadata
     return indexedMetadata
 end
