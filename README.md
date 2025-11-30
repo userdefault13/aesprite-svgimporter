@@ -4,16 +4,17 @@ A professional SVG importer plugin for Aseprite that handles complex pixel art S
 
 ## Features
 
-✅ **Pixel-perfect 1:1 rendering** - Integer-only algorithm for exact pixel mapping  
-✅ **CSS class support** - Handles SVG stylesheets with color classes  
-✅ **Path holes** - Correctly renders paths with transparent holes (non-zero winding rule)  
-✅ **Multi-path support** - Complex paths with multiple sub-paths  
-✅ **Epsilon-based boundaries** - Eliminates floating-point precision errors  
-✅ **Group inheritance** - Nested `<g>` elements with fill inheritance  
+✅ **Pixel-perfect 1:1 rendering** - Integer-only algorithm for exact pixel mapping
+✅ **CSS class support** - Handles SVG stylesheets with color classes
+✅ **Path holes** - Correctly renders paths with transparent holes (non-zero winding rule)
+✅ **Multi-path support** - Complex paths with multiple sub-paths
+✅ **Epsilon-based boundaries** - Eliminates floating-point precision errors
+✅ **Group inheritance** - Nested `<g>` elements with fill inheritance
+✅ **Nested SVG positioning** - Supports `<svg x="7" y="31">` positioning for wearables  
 
 ## Installation
 
-1. Download `svg-importer-css-fixed.aseprite-extension`
+1. Download `svg-importer-positioning-fix-v2.aseprite-extension`
 2. In Aseprite: **Edit → Preferences → Extensions**
 3. Click **Add Extension** and select the file
 4. Restart Aseprite
@@ -85,6 +86,22 @@ Applied to paths:
 <path d="..." class="T"/>  /* Gets pink #f122ad */
 ```
 
+### Nested SVG Positioning
+
+Supports wearable positioning with nested `<svg>` elements:
+```svg
+<svg viewBox="0 0 64 64">
+  <g class="gotchi-wearable wearable-body">
+    <svg x="7" y="31">
+      <!-- Wearable content positioned at (7,31) -->
+      <path d="..." fill="#0fa9c9"/>
+    </svg>
+  </g>
+</svg>
+```
+
+All coordinates in nested SVGs are automatically offset by the parent SVG's x,y position.
+
 ### Path Holes
 
 Handles complex paths with holes using non-zero winding rule:
@@ -96,9 +113,9 @@ Handles complex paths with holes using non-zero winding rule:
 
 ```
 svg-importer/
-├── svg-importer-css-fixed.aseprite-extension  # Latest extension
+├── svg-importer-positioning-fix-v2.aseprite-extension  # Latest extension (positioning fix)
 ├── svg-importer.lua                           # Main plugin
-├── svg-parser.lua                             # SVG parsing with CSS
+├── svg-parser.lua                             # SVG parsing with CSS + nested SVG
 ├── svg-renderer-professional.lua              # Scanline rendering
 ├── examples/                                  # Test SVG files
 ├── docs/                                      # Technical documentation
@@ -107,6 +124,8 @@ svg-importer/
 
 ## Version History
 
+- **v1.8.0** - Added nested SVG positioning support for wearables
+- **v1.7.0** - Fixed CSS color parsing (semicolon handling)
 - **v1.6.0** - CSS class support, path holes, epsilon fix
 - **v1.5.0** - Epsilon-based boundary handling
 - **v1.4.0** - Non-zero winding rule

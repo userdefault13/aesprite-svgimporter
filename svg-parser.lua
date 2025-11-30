@@ -6,23 +6,23 @@ local SVGParser = {}
 -- Parse hex color to RGB
 local function hexToRgb(hex)
     if not hex or hex == "" then return {r = 0, g = 0, b = 0} end
-    
-    -- Remove # if present
-    hex = hex:gsub("#", "")
-    
+
+    -- Remove # if present and clean up trailing characters
+    hex = hex:gsub("#", ""):gsub("[^%w]", "")  -- Remove # and any non-alphanumeric characters
+
     -- Handle 3-digit hex
     if #hex == 3 then
         hex = hex:gsub("(.)(.)(.)", "%1%1%2%2%3%3")
     end
-    
+
     -- Handle 6-digit hex
-    if #hex == 6 then
+    if #hex >= 6 then
         local r = tonumber(hex:sub(1, 2), 16) or 0
         local g = tonumber(hex:sub(3, 4), 16) or 0
         local b = tonumber(hex:sub(5, 6), 16) or 0
         return {r = r, g = g, b = b}
     end
-    
+
     return {r = 0, g = 0, b = 0}
 end
 
@@ -174,6 +174,8 @@ function SVGParser.parse(svgContent)
     local i = 1
     local groupFillStack = {} -- Stack to track nested group fills
     local currentGroupFill = nil
+    local svgOffsetStack = {} -- Stack to track nested SVG positioning
+    local currentSvgOffset = {x = 0, y = 0}
     
     while i <= #svgContent do
         local char = svgContent:sub(i, i)
@@ -185,7 +187,7 @@ function SVGParser.parse(svgContent)
                 local gTag = svgContent:sub(i, gEnd)
                 local groupFill = gTag:match('fill="([^"]*)"')
                 local groupClass = gTag:match('class="([^"]*)"')
-                
+
                 if groupFill then
                     local fillColor = hexToRgb(groupFill)
                     table.insert(groupFillStack, fillColor)
@@ -197,8 +199,27 @@ function SVGParser.parse(svgContent)
                 else
                     table.insert(groupFillStack, currentGroupFill) -- Inherit parent group fill
                 end
-                
+
                 i = gEnd + 1
+            else
+                i = i + 1
+            end
+        -- Look for opening <svg> tags with x,y positioning
+        elseif char == '<' and svgContent:sub(i + 1, i + 3) == 'svg' and svgContent:sub(i + 4, i + 4):match('[%s>]') then
+            local svgEnd = svgContent:find('>', i)
+            if svgEnd then
+                local svgTag = svgContent:sub(i, svgEnd)
+                local svgX = svgTag:match('x="([^"]*)"') or svgTag:match("x='([^']*)'")
+                local svgY = svgTag:match('y="([^"]*)"') or svgTag:match("y='([^']*)'")
+
+                local newOffset = {
+                    x = currentSvgOffset.x + (tonumber(svgX) or 0),
+                    y = currentSvgOffset.y + (tonumber(svgY) or 0)
+                }
+                table.insert(svgOffsetStack, newOffset)
+                currentSvgOffset = newOffset
+
+                i = svgEnd + 1
             else
                 i = i + 1
             end
@@ -209,6 +230,13 @@ function SVGParser.parse(svgContent)
                 currentGroupFill = groupFillStack[#groupFillStack]
             end
             i = i + 4
+        -- Look for closing </svg> tags
+        elseif char == '<' and svgContent:sub(i, i + 5) == '</svg>' then
+            if #svgOffsetStack > 0 then
+                table.remove(svgOffsetStack)
+                currentSvgOffset = svgOffsetStack[#svgOffsetStack] or {x = 0, y = 0}
+            end
+            i = i + 6
         -- Look for <path> elements
         elseif char == '<' and svgContent:sub(i + 1, i + 4) == 'path' then
             local pathEnd = svgContent:find('/>', i)
@@ -240,16 +268,67 @@ function SVGParser.parse(svgContent)
                 if d then
                     pathCommands = parsePathData(d)
                 end
-                
-                -- Create path element
+
+                -- Create path element with SVG offset stored
                 local path = {
                     type = "path",
                     fill = fillColor,
-                    pathCommands = pathCommands
+                    pathCommands = pathCommands,
+                    svgOffset = {x = currentSvgOffset.x, y = currentSvgOffset.y}  -- Store offset for rendering
                 }
                 
                 table.insert(result.elements, path)
                 i = pathEnd + 2
+            else
+                i = i + 1
+            end
+        -- Look for <rect> elements
+        elseif char == '<' and svgContent:sub(i + 1, i + 4) == 'rect' then
+            local rectEnd = svgContent:find('/>', i)
+            if rectEnd then
+                local rectStr = svgContent:sub(i, rectEnd + 1)
+                
+                -- Extract fill attribute from rect
+                local rectFill = rectStr:match('fill="([^"]*)"')
+                local rectClass = rectStr:match('class="([^"]*)"')
+                local fillColor
+                
+                if rectFill then
+                    -- Rect has explicit fill - use it
+                    fillColor = hexToRgb(rectFill)
+                elseif rectClass and cssStyles[rectClass] then
+                    -- Rect uses CSS class - look up color
+                    fillColor = cssStyles[rectClass]
+                elseif currentGroupFill then
+                    -- No explicit fill - inherit from group
+                    fillColor = currentGroupFill
+                else
+                    -- No fill anywhere - default to black
+                    fillColor = {r = 0, g = 0, b = 0}
+                end
+                
+                -- Extract rect attributes (x, y, width, height, transform)
+                local x = tonumber(rectStr:match('x="([^"]*)"') or rectStr:match("x='([^']*)'") or "0")
+                local y = tonumber(rectStr:match('y="([^"]*)"') or rectStr:match("y='([^']*)'") or "0")
+                local width = tonumber(rectStr:match('width="([^"]*)"') or rectStr:match("width='([^']*)'") or "0")
+                local height = tonumber(rectStr:match('height="([^"]*)"') or rectStr:match("height='([^']*)'") or "0")
+                local transform = rectStr:match('transform="([^"]*)"') or rectStr:match("transform='([^']*)'")
+
+                -- Create rect element (will be converted to path commands in renderer)
+                -- SVG offset will be applied during rendering
+                local rect = {
+                    type = "rect",
+                    fill = fillColor,
+                    x = x or 0,
+                    y = y or 0,
+                    width = width or 0,
+                    height = height or 0,
+                    transform = transform,
+                    svgOffset = {x = currentSvgOffset.x, y = currentSvgOffset.y}  -- Store offset for rendering
+                }
+                
+                table.insert(result.elements, rect)
+                i = rectEnd + 2
             else
                 i = i + 1
             end

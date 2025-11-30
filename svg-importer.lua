@@ -23,7 +23,7 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
     
     -- Parse SVG
     local svgData = SVGParser.parse(svgContent)
-    
+
     -- Use SVG's native dimensions
     local viewBoxWidth = math.floor(svgData.viewBox.width)
     local viewBoxHeight = math.floor(svgData.viewBox.height)
@@ -42,7 +42,7 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
     if #svgData.elements > 0 then
         debugMsg = debugMsg .. "\nFirst element: " .. svgData.elements[1].type .. " with " .. #svgData.elements[1].pathCommands .. " commands"
         debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
-        
+
         -- Show color variety
         local colors = {}
         for _, elem in ipairs(svgData.elements) do
@@ -52,6 +52,18 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
         local colorCount = 0
         for _ in pairs(colors) do colorCount = colorCount + 1 end
         debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
+
+        -- Check for black pixels
+        local blackPixels = 0
+        for colorKey, count in pairs(colors) do
+            if colorKey == "#000000" then
+                blackPixels = count
+                break
+            end
+        end
+        if blackPixels > 0 then
+            debugMsg = debugMsg .. "\nWARNING: " .. blackPixels .. " elements have black fill color!"
+        end
     end
     app.alert(debugMsg)
     
@@ -60,15 +72,29 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
     
     -- Debug: Check actual pixel coordinate range
     local maxX, maxY = -1, -1
+    local minX, minY = math.huge, math.huge
     for _, pixel in ipairs(renderResult.pixels) do
         maxX = math.max(maxX, pixel.x)
         maxY = math.max(maxY, pixel.y)
+        minX = math.min(minX, pixel.x)
+        minY = math.min(minY, pixel.y)
     end
-    
+
     app.alert("Rendered " .. #renderResult.pixels .. " pixels\n" ..
               "Canvas: " .. canvasWidth .. "×" .. canvasHeight .. "\n" ..
-              "Max pixel coords: X=" .. maxX .. ", Y=" .. maxY .. "\n" ..
-              "(Should be X≤" .. (canvasWidth-1) .. ", Y≤" .. (canvasHeight-1) .. ")")
+              "Pixel bounds: X=[" .. minX .. "," .. maxX .. "], Y=[" .. minY .. "," .. maxY .. "]\n" ..
+              "Expected: X=[0," .. (canvasWidth-1) .. "], Y=[0," .. (canvasHeight-1) .. "]")
+
+    -- Check for potential outline artifacts
+    local edgePixels = 0
+    for _, pixel in ipairs(renderResult.pixels) do
+        if pixel.x == 0 or pixel.x == canvasWidth-1 or pixel.y == 0 or pixel.y == canvasHeight-1 then
+            edgePixels = edgePixels + 1
+        end
+    end
+    if edgePixels > 0 then
+        app.alert("Warning: " .. edgePixels .. " pixels are on the canvas edge - this might create outline artifacts")
+    end
     
     -- Create new sprite
     local sprite = Sprite(canvasWidth, canvasHeight, ColorMode.RGB)
@@ -117,6 +143,18 @@ local function importFromCode(svgCode, canvasWidth, canvasHeight)
         local colorCount = 0
         for _ in pairs(colors) do colorCount = colorCount + 1 end
         debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
+
+        -- Check for black pixels
+        local blackPixels = 0
+        for colorKey, count in pairs(colors) do
+            if colorKey == "#000000" then
+                blackPixels = count
+                break
+            end
+        end
+        if blackPixels > 0 then
+            debugMsg = debugMsg .. "\nWARNING: " .. blackPixels .. " elements have black fill color!"
+        end
     end
     app.alert(debugMsg)
     
@@ -125,15 +163,29 @@ local function importFromCode(svgCode, canvasWidth, canvasHeight)
     
     -- Debug: Check actual pixel coordinate range
     local maxX, maxY = -1, -1
+    local minX, minY = math.huge, math.huge
     for _, pixel in ipairs(renderResult.pixels) do
         maxX = math.max(maxX, pixel.x)
         maxY = math.max(maxY, pixel.y)
+        minX = math.min(minX, pixel.x)
+        minY = math.min(minY, pixel.y)
     end
-    
+
     app.alert("Rendered " .. #renderResult.pixels .. " pixels\n" ..
               "Canvas: " .. canvasWidth .. "×" .. canvasHeight .. "\n" ..
-              "Max pixel coords: X=" .. maxX .. ", Y=" .. maxY .. "\n" ..
-              "(Should be X≤" .. (canvasWidth-1) .. ", Y≤" .. (canvasHeight-1) .. ")")
+              "Pixel bounds: X=[" .. minX .. "," .. maxX .. "], Y=[" .. minY .. "," .. maxY .. "]\n" ..
+              "Expected: X=[0," .. (canvasWidth-1) .. "], Y=[0," .. (canvasHeight-1) .. "]")
+
+    -- Check for potential outline artifacts
+    local edgePixels = 0
+    for _, pixel in ipairs(renderResult.pixels) do
+        if pixel.x == 0 or pixel.x == canvasWidth-1 or pixel.y == 0 or pixel.y == canvasHeight-1 then
+            edgePixels = edgePixels + 1
+        end
+    end
+    if edgePixels > 0 then
+        app.alert("Warning: " .. edgePixels .. " pixels are on the canvas edge - this might create outline artifacts")
+    end
     
     -- Create new sprite
     local sprite = Sprite(canvasWidth, canvasHeight, ColorMode.RGB)

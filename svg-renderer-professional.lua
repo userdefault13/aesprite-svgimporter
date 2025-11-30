@@ -713,8 +713,9 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     end
     
     -- Place at (0,0) - top-left corner, no centering
-    local offsetX = 0
-    local offsetY = 0
+    -- But apply SVG offset if this path came from a nested SVG
+    local offsetX = (path.svgOffset and path.svgOffset.x) or 0
+    local offsetY = (path.svgOffset and path.svgOffset.y) or 0
     
     -- Debug: Track max coordinates
     local maxCoordX, maxCoordY = -math.huge, -math.huge
@@ -770,6 +771,85 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     return pixels
 end
 
+-- Render a rect element by converting it to a path
+local function renderRect(rect, viewBox, targetWidth, targetHeight)
+    local pixels = {}
+    
+    -- Validate inputs
+    if not rect or not rect.width or not rect.height then
+        return pixels
+    end
+    
+    if rect.width <= 0 or rect.height <= 0 then
+        return pixels
+    end
+    
+    -- Convert rect to path commands: M x,y L x+width,y L x+width,y+height L x,y+height Z
+    -- Apply SVG offset if this rect came from a nested SVG
+    local svgOffsetX = (rect.svgOffset and rect.svgOffset.x) or 0
+    local svgOffsetY = (rect.svgOffset and rect.svgOffset.y) or 0
+    local x = (rect.x or 0) + svgOffsetX
+    local y = (rect.y or 0) + svgOffsetY
+    local width = rect.width
+    local height = rect.height
+    
+    -- Handle transform if present (simple rotation support for now)
+    if rect.transform then
+        -- Parse rotate transform: rotate(angle x y) or rotate(angle)
+        -- Example: rotate(-90 22 28) means rotate -90 degrees around point (22, 28)
+        local angle, cx, cy = rect.transform:match("rotate%(([^%s,]+)%s*([^%s,]+)%s*([^%)]+)%)")
+        if not angle then
+            angle = rect.transform:match("rotate%(([^%)]+)%)")
+        end
+        if angle then
+            angle = tonumber(angle) or 0
+            -- For 90/-90 degree rotations, swap width/height
+            if math.abs(math.abs(angle) - 90) < 0.1 then
+                -- Swap dimensions
+                width, height = height, width
+                -- Adjust position for rotation around center point
+                if cx and cy then
+                    cx, cy = tonumber(cx), tonumber(cy)
+                    -- For -90 degree rotation around (cx, cy):
+                    -- Original rect center is at (x + w/2, y + h/2)
+                    -- After rotation, new center is at (cx - (y + h/2 - cy), cy + (x + w/2 - cx))
+                    -- Simplified: for -90 around (cx,cy), new x = cx - (y + h/2 - cy), new y = cy + (x + w/2 - cx)
+                    local oldCenterX = x + width / 2
+                    local oldCenterY = y + height / 2
+                    if angle < 0 then
+                        -- -90 degree rotation
+                        x = cx - (oldCenterY - cy) - width / 2
+                        y = cy + (oldCenterX - cx) - height / 2
+                    else
+                        -- +90 degree rotation
+                        x = cx + (oldCenterY - cy) - width / 2
+                        y = cy - (oldCenterX - cx) - height / 2
+                    end
+                end
+            end
+        end
+    end
+    
+    -- Create path commands for rectangle
+    local pathCommands = {
+        {type = "M", isRelative = false, params = {x, y}},
+        {type = "L", isRelative = false, params = {x + width, y}},
+        {type = "L", isRelative = false, params = {x + width, y + height}},
+        {type = "L", isRelative = false, params = {x, y + height}},
+        {type = "Z", isRelative = false, params = {}}
+    }
+    
+    -- Create a path-like structure
+    local path = {
+        type = "path",
+        fill = rect.fill,
+        pathCommands = pathCommands
+    }
+    
+    -- Render as path
+    return renderPath(path, viewBox, targetWidth, targetHeight)
+end
+
 -- Main rendering function
 function SVGRenderer.render(svgData, targetWidth, targetHeight)
     local result = {
@@ -787,13 +867,24 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
         return result
     end
     
-    -- Render all path elements with error handling
-    for i, path in ipairs(svgData.elements) do
-        local success, pathPixels = pcall(renderPath, path, svgData.viewBox, targetWidth, targetHeight)
-        if success and pathPixels then
-            for _, pixel in ipairs(pathPixels) do
-                if pixel and pixel.x and pixel.y and pixel.color then
-                    table.insert(result.pixels, pixel)
+    -- Render all elements with error handling
+    for i, element in ipairs(svgData.elements) do
+        if element.type == "path" then
+            local success, pathPixels = pcall(renderPath, element, svgData.viewBox, targetWidth, targetHeight)
+            if success and pathPixels then
+                for _, pixel in ipairs(pathPixels) do
+                    if pixel and pixel.x and pixel.y and pixel.color then
+                        table.insert(result.pixels, pixel)
+                    end
+                end
+            end
+        elseif element.type == "rect" then
+            local success, rectPixels = pcall(renderRect, element, svgData.viewBox, targetWidth, targetHeight)
+            if success and rectPixels then
+                for _, pixel in ipairs(rectPixels) do
+                    if pixel and pixel.x and pixel.y and pixel.color then
+                        table.insert(result.pixels, pixel)
+                    end
                 end
             end
         end
