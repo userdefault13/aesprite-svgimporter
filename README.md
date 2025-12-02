@@ -22,6 +22,42 @@ A professional SVG importer plugin for Aseprite that handles complex pixel art S
 
 ## Usage
 
+### GUI Mode (Extension)
+
+1. Install the extension in Aseprite
+2. Use via **File → Scripts → Import SVG**
+3. Select SVG file or paste SVG code
+4. Choose canvas size (Auto recommended for pixel-perfect rendering)
+
+### CLI Mode (Command Line)
+
+The extension includes a CLI script for batch processing:
+
+```bash
+# Basic usage - auto canvas size from SVG viewBox
+aseprite -b --script svg-importer-cli.lua -- input.svg
+
+# Specify canvas size
+aseprite -b --script svg-importer-cli.lua -- input.svg 64 64
+
+# Specify output file
+aseprite -b --script svg-importer-cli.lua -- input.svg 64 64 output.aseprite
+```
+
+**Arguments:**
+- `svg_file` - Path to SVG file to import (required)
+- `width` - Canvas width in pixels (optional, defaults to SVG viewBox width)
+- `height` - Canvas height in pixels (optional, defaults to SVG viewBox height)
+- `output_file` - Output .aseprite file path (optional, defaults to input filename with .aseprite extension)
+
+**Example:**
+```bash
+# Import a wearable SVG with auto sizing
+aseprite -b --script svg-importer-cli.lua -- wearable.svg
+
+# Import with specific 64x64 canvas
+aseprite -b --script svg-importer-cli.lua -- wearable.svg 64 64 wearable.aseprite
+```
 
 ### Batch: Generate Eye Shapes for All Collaterals
 
@@ -113,8 +149,9 @@ Handles complex paths with holes using non-zero winding rule:
 
 ```
 svg-importer/
-├── svg-importer-positioning-fix-v2.aseprite-extension  # Latest extension (positioning fix)
-├── svg-importer.lua                           # Main plugin
+├── svg-importer-positioning-fix-v3.aseprite-extension  # Latest extension (positioning fix)
+├── svg-importer.lua                           # Main plugin (GUI)
+├── svg-importer-cli.lua                       # CLI script for batch processing
 ├── svg-parser.lua                             # SVG parsing with CSS + nested SVG
 ├── svg-renderer-professional.lua              # Scanline rendering
 ├── examples/                                  # Test SVG files
@@ -124,6 +161,7 @@ svg-importer/
 
 ## Version History
 
+- **v1.9.0** - Added CLI support for batch processing
 - **v1.8.0** - Added nested SVG positioning support for wearables
 - **v1.7.0** - Fixed CSS color parsing (semicolon handling)
 - **v1.6.0** - CSS class support, path holes, epsilon fix
