@@ -6,10 +6,33 @@
 local SVGParser = dofile("svg-parser.lua")
 local SVGRenderer = dofile("svg-renderer-professional.lua")
 
--- Get command line arguments
-local args = {...}
+-- Get parameters from environment variables (works better in batch mode)
+local svgFile = os.getenv("SVG_FILE")
+local canvasWidth = os.getenv("SVG_WIDTH") and tonumber(os.getenv("SVG_WIDTH")) or nil
+local canvasHeight = os.getenv("SVG_HEIGHT") and tonumber(os.getenv("SVG_HEIGHT")) or nil
+local outputFile = os.getenv("SVG_OUTPUT")
 
-if #args < 1 then
+-- Fallback to command line arguments
+if not svgFile or svgFile == "" then
+    local args = {...}
+    -- Filter out any "--" separator if present
+    local filteredArgs = {}
+    for i, arg in ipairs(args) do
+        if arg ~= "--" then
+            table.insert(filteredArgs, arg)
+        end
+    end
+    args = filteredArgs
+    
+    if #args >= 1 then
+        svgFile = args[1]
+        canvasWidth = args[2] and tonumber(args[2]) or nil
+        canvasHeight = args[3] and tonumber(args[3]) or nil
+        outputFile = args[4] or (svgFile:gsub("%.svg$", ""):gsub("%.SVG$", "") .. ".aseprite")
+    end
+end
+
+if not svgFile or svgFile == "" then
     print("SVG Importer CLI")
     print("Usage: aseprite -b --script svg-importer-cli.lua -- <svg_file> [width] [height] [output_file]")
     print("")
@@ -23,13 +46,13 @@ if #args < 1 then
     print("  aseprite -b --script svg-importer-cli.lua -- input.svg")
     print("  aseprite -b --script svg-importer-cli.lua -- input.svg 64 64")
     print("  aseprite -b --script svg-importer-cli.lua -- input.svg 64 64 output.aseprite")
-    os.exit(1)
+    return
 end
 
-local svgFile = args[1]
-local canvasWidth = args[2] and tonumber(args[2]) or nil
-local canvasHeight = args[3] and tonumber(args[3]) or nil
-local outputFile = args[4] or svgFile:gsub("%.svg$", ""):gsub("%.SVG$", "") .. ".aseprite"
+-- outputFile is set above, or use default
+if not outputFile or outputFile == "" then
+    outputFile = svgFile:gsub("%.svg$", ""):gsub("%.SVG$", "") .. ".aseprite"
+end
 
 print("SVG Importer CLI")
 print("=================")
@@ -46,7 +69,7 @@ print("")
 local file = io.open(svgFile, "r")
 if not file then
     print("ERROR: Could not open file: " .. svgFile)
-    os.exit(1)
+    return
 end
 
 local svgContent = file:read("*all")
@@ -54,7 +77,7 @@ file:close()
 
 if not svgContent or svgContent == "" then
     print("ERROR: File is empty: " .. svgFile)
-    os.exit(1)
+    return
 end
 
 -- Parse SVG
@@ -62,7 +85,7 @@ print("Parsing SVG...")
 local svgData = SVGParser.parse(svgContent)
 if not svgData or not svgData.viewBox then
     print("ERROR: Could not parse SVG viewBox")
-    os.exit(1)
+    return
 end
 
 print("  ViewBox: " .. svgData.viewBox.width .. "x" .. svgData.viewBox.height)
