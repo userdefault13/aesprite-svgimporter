@@ -143,36 +143,15 @@ local function parseCSSStyles(svgContent)
     end
     
     if styleBlock then
-        -- Parse CSS rules: .class{fill:#color} (handles whitespace/newlines)
+        -- Parse CSS rules: .class{fill:#color} (no spaces between rules)
         for className, colorValue in styleBlock:gmatch('%.([^%{]+)%{fill:([^}]+)%}') do
             if className and colorValue then
-                -- Trim whitespace from class name and color value
-                className = className:match("^%s*(.-)%s*$") or className
-                colorValue = colorValue:match("^%s*(.-)%s*$") or colorValue
-                if className ~= "" and colorValue ~= "" then
-                    styles[className] = hexToRgb(colorValue)
-                end
+                styles[className] = hexToRgb(colorValue)
             end
         end
     end
     
     return styles
-end
-
--- Helper function to find CSS color from class string (handles multiple classes)
-local function findColorFromClasses(classString, cssStyles)
-    if not classString or not cssStyles then
-        return nil
-    end
-    
-    -- Split class string by spaces and check each class
-    for className in classString:gmatch("([^%s]+)") do
-        if cssStyles[className] then
-            return cssStyles[className]
-        end
-    end
-    
-    return nil
 end
 
 -- Main parsing function with group support
@@ -184,15 +163,6 @@ function SVGParser.parse(svgContent)
     
     -- Parse CSS styles first
     local cssStyles = parseCSSStyles(svgContent)
-    
-    -- Debug: Log parsed CSS styles
-    local debugStyles = {}
-    for className, color in pairs(cssStyles) do
-        table.insert(debugStyles, className .. "=" .. string.format("#%02x%02x%02x", color.r, color.g, color.b))
-    end
-    if #debugStyles > 0 then
-        print("DEBUG: Parsed CSS styles: " .. table.concat(debugStyles, ", "))
-    end
     
     -- Extract viewBox
     local viewBox = svgContent:match('viewBox="([^"]*)"')
@@ -222,15 +192,10 @@ function SVGParser.parse(svgContent)
                     local fillColor = hexToRgb(groupFill)
                     table.insert(groupFillStack, fillColor)
                     currentGroupFill = fillColor
-                elseif groupClass then
-                    -- Group uses CSS class(es) - look up color (handles multiple classes)
-                    local fillColor = findColorFromClasses(groupClass, cssStyles)
-                    if fillColor then
-                        table.insert(groupFillStack, fillColor)
-                        currentGroupFill = fillColor
-                    else
-                        table.insert(groupFillStack, currentGroupFill) -- Inherit parent group fill
-                    end
+                elseif groupClass and cssStyles[groupClass] then
+                    local fillColor = cssStyles[groupClass]
+                    table.insert(groupFillStack, fillColor)
+                    currentGroupFill = fillColor
                 else
                     table.insert(groupFillStack, currentGroupFill) -- Inherit parent group fill
                 end
@@ -278,56 +243,23 @@ function SVGParser.parse(svgContent)
             if pathEnd then
                 local pathStr = svgContent:sub(i, pathEnd + 1)
                 
-                -- Extract fill attribute from path (try both single and double quotes)
-                local pathFill = pathStr:match('fill="([^"]*)"') or pathStr:match("fill='([^']*)'")
-                local pathClass = pathStr:match('class="([^"]*)"') or pathStr:match("class='([^']*)'")
+                -- Extract fill attribute from path
+                local pathFill = pathStr:match('fill="([^"]*)"')
+                local pathClass = pathStr:match('class="([^"]*)"')
                 local fillColor
-                
-                -- Debug logging
-                local debugInfo = {}
-                
-                -- More detailed debug for paths without classes
-                if not pathClass and not pathFill then
-                    -- Show first 100 chars of path string for debugging
-                    local pathPreview = pathStr:sub(1, math.min(100, #pathStr))
-                    print("DEBUG PATH STRING: " .. pathPreview)
-                end
                 
                 if pathFill then
                     -- Path has explicit fill - use it
                     fillColor = hexToRgb(pathFill)
-                    table.insert(debugInfo, "explicit fill=" .. pathFill)
-                elseif pathClass then
-                    -- Path uses CSS class(es) - look up color (handles multiple classes)
-                    table.insert(debugInfo, "class=\"" .. pathClass .. "\"")
-                    fillColor = findColorFromClasses(pathClass, cssStyles)
-                    if fillColor then
-                        table.insert(debugInfo, "found color=" .. string.format("#%02x%02x%02x", fillColor.r, fillColor.g, fillColor.b))
-                    else
-                        table.insert(debugInfo, "NO COLOR FOUND for classes")
-                        if currentGroupFill then
-                            -- No matching CSS class - inherit from group
-                            fillColor = currentGroupFill
-                            table.insert(debugInfo, "using group fill")
-                        else
-                            -- No fill anywhere - default to black
-                            fillColor = {r = 0, g = 0, b = 0}
-                            table.insert(debugInfo, "DEFAULTING TO BLACK")
-                        end
-                    end
+                elseif pathClass and cssStyles[pathClass] then
+                    -- Path uses CSS class - look up color
+                    fillColor = cssStyles[pathClass]
                 elseif currentGroupFill then
                     -- No explicit fill - inherit from group
                     fillColor = currentGroupFill
-                    table.insert(debugInfo, "no class, using group fill")
                 else
                     -- No fill anywhere - default to black
                     fillColor = {r = 0, g = 0, b = 0}
-                    table.insert(debugInfo, "no class/group, DEFAULTING TO BLACK")
-                end
-                
-                -- Print debug info for paths that end up black
-                if fillColor.r == 0 and fillColor.g == 0 and fillColor.b == 0 and not pathFill then
-                    print("DEBUG PATH (BLACK): " .. table.concat(debugInfo, " | "))
                 end
                 
                 -- Extract d attribute
@@ -364,16 +296,9 @@ function SVGParser.parse(svgContent)
                 if rectFill then
                     -- Rect has explicit fill - use it
                     fillColor = hexToRgb(rectFill)
-                elseif rectClass then
-                    -- Rect uses CSS class(es) - look up color (handles multiple classes)
-                    fillColor = findColorFromClasses(rectClass, cssStyles)
-                    if not fillColor and currentGroupFill then
-                        -- No matching CSS class - inherit from group
-                        fillColor = currentGroupFill
-                    elseif not fillColor then
-                        -- No fill anywhere - default to black
-                        fillColor = {r = 0, g = 0, b = 0}
-                    end
+                elseif rectClass and cssStyles[rectClass] then
+                    -- Rect uses CSS class - look up color
+                    fillColor = cssStyles[rectClass]
                 elseif currentGroupFill then
                     -- No explicit fill - inherit from group
                     fillColor = currentGroupFill

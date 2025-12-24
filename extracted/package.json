@@ -2,7 +2,7 @@
   "name": "svg-importer",
   "displayName": "SVG Importer",
   "description": "Import SVG files and code into Aseprite sprites with automatic scaling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Undeadpixel Studio",
     "email": "julius@.com"

@@ -40,18 +40,41 @@ local function importFromFile(filePath, canvasWidth, canvasHeight)
     debugMsg = debugMsg .. "Canvas: " .. canvasWidth .. "×" .. canvasHeight .. "\n"
     debugMsg = debugMsg .. "Parsed " .. #svgData.elements .. " elements"
     if #svgData.elements > 0 then
-        debugMsg = debugMsg .. "\nFirst element: " .. svgData.elements[1].type .. " with " .. #svgData.elements[1].pathCommands .. " commands"
-        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        local firstElem = svgData.elements[1]
+        if firstElem.type == "path" and firstElem.pathCommands then
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type .. " with " .. #firstElem.pathCommands .. " commands"
+        elseif firstElem.type == "rect" then
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type .. " (" .. (firstElem.width or 0) .. "×" .. (firstElem.height or 0) .. ")"
+        else
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type
+        end
+        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", firstElem.fill.r, firstElem.fill.g, firstElem.fill.b)
 
-        -- Show color variety
+        -- Show color variety with details
         local colors = {}
-        for _, elem in ipairs(svgData.elements) do
-            local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
-            colors[colorKey] = (colors[colorKey] or 0) + 1
+        local sampleColors = {}
+        for i, elem in ipairs(svgData.elements) do
+            if elem.fill then
+                local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
+                colors[colorKey] = (colors[colorKey] or 0) + 1
+                if #sampleColors < 5 and not colors[colorKey] or colors[colorKey] == 1 then
+                    table.insert(sampleColors, string.format("%d:%s", i, colorKey))
+                end
+            end
         end
         local colorCount = 0
-        for _ in pairs(colors) do colorCount = colorCount + 1 end
+        local colorList = {}
+        for colorKey, count in pairs(colors) do
+            colorCount = colorCount + 1
+            table.insert(colorList, string.format("%s(%d)", colorKey, count))
+        end
         debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
+        if #colorList > 0 then
+            debugMsg = debugMsg .. "\nColors found: " .. table.concat(colorList, ", ")
+        end
+        if #sampleColors > 0 then
+            debugMsg = debugMsg .. "\nSample: " .. table.concat(sampleColors, ", ")
+        end
 
         -- Check for black pixels
         local blackPixels = 0
@@ -131,18 +154,41 @@ local function importFromCode(svgCode, canvasWidth, canvasHeight)
     -- Debug output with color info
     local debugMsg = "Debug: Parsed " .. #svgData.elements .. " elements"
     if #svgData.elements > 0 then
-        debugMsg = debugMsg .. "\nFirst element: " .. svgData.elements[1].type .. " with " .. #svgData.elements[1].pathCommands .. " commands"
-        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", svgData.elements[1].fill.r, svgData.elements[1].fill.g, svgData.elements[1].fill.b)
+        local firstElem = svgData.elements[1]
+        if firstElem.type == "path" and firstElem.pathCommands then
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type .. " with " .. #firstElem.pathCommands .. " commands"
+        elseif firstElem.type == "rect" then
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type .. " (" .. (firstElem.width or 0) .. "×" .. (firstElem.height or 0) .. ")"
+        else
+            debugMsg = debugMsg .. "\nFirst element: " .. firstElem.type
+        end
+        debugMsg = debugMsg .. "\nFill: " .. string.format("#%02x%02x%02x", firstElem.fill.r, firstElem.fill.g, firstElem.fill.b)
         
-        -- Show color variety
+        -- Show color variety with details
         local colors = {}
-        for _, elem in ipairs(svgData.elements) do
-            local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
-            colors[colorKey] = (colors[colorKey] or 0) + 1
+        local sampleColors = {}
+        for i, elem in ipairs(svgData.elements) do
+            if elem.fill then
+                local colorKey = string.format("#%02x%02x%02x", elem.fill.r, elem.fill.g, elem.fill.b)
+                colors[colorKey] = (colors[colorKey] or 0) + 1
+                if #sampleColors < 5 and not colors[colorKey] or colors[colorKey] == 1 then
+                    table.insert(sampleColors, string.format("%d:%s", i, colorKey))
+                end
+            end
         end
         local colorCount = 0
-        for _ in pairs(colors) do colorCount = colorCount + 1 end
+        local colorList = {}
+        for colorKey, count in pairs(colors) do
+            colorCount = colorCount + 1
+            table.insert(colorList, string.format("%s(%d)", colorKey, count))
+        end
         debugMsg = debugMsg .. "\nUnique colors: " .. colorCount
+        if #colorList > 0 then
+            debugMsg = debugMsg .. "\nColors found: " .. table.concat(colorList, ", ")
+        end
+        if #sampleColors > 0 then
+            debugMsg = debugMsg .. "\nSample: " .. table.concat(sampleColors, ", ")
+        end
 
         -- Check for black pixels
         local blackPixels = 0

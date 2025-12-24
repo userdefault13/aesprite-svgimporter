@@ -867,14 +867,32 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
         return result
     end
     
-    -- Render all elements with error handling
+    -- Use a pixel map to deduplicate overlapping pixels (last one wins)
+    -- This ensures that later-rendered paths (like orange fill) overwrite earlier paths (like black outline)
+    local pixelMap = {}
+    
+    -- Render all elements in order with error handling
+    -- Later elements will overwrite overlapping pixels from earlier elements
     for i, element in ipairs(svgData.elements) do
         if element.type == "path" then
             local success, pathPixels = pcall(renderPath, element, svgData.viewBox, targetWidth, targetHeight)
             if success and pathPixels then
                 for _, pixel in ipairs(pathPixels) do
                     if pixel and pixel.x and pixel.y and pixel.color then
-                        table.insert(result.pixels, pixel)
+                        -- Ensure pixel coordinates are integers (snap to pixel grid)
+                        local x = math.floor(pixel.x + 0.5)
+                        local y = math.floor(pixel.y + 0.5)
+                        
+                        -- Clamp to canvas bounds
+                        if x >= 0 and x < targetWidth and y >= 0 and y < targetHeight then
+                            -- Use x,y as key to deduplicate (later paths overwrite earlier ones)
+                            local key = x + y * targetWidth
+                            pixelMap[key] = {
+                                x = x,
+                                y = y,
+                                color = pixel.color
+                            }
+                        end
                     end
                 end
             end
@@ -883,11 +901,29 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
             if success and rectPixels then
                 for _, pixel in ipairs(rectPixels) do
                     if pixel and pixel.x and pixel.y and pixel.color then
-                        table.insert(result.pixels, pixel)
+                        -- Ensure pixel coordinates are integers (snap to pixel grid)
+                        local x = math.floor(pixel.x + 0.5)
+                        local y = math.floor(pixel.y + 0.5)
+                        
+                        -- Clamp to canvas bounds
+                        if x >= 0 and x < targetWidth and y >= 0 and y < targetHeight then
+                            -- Use x,y as key to deduplicate (later paths overwrite earlier ones)
+                            local key = x + y * targetWidth
+                            pixelMap[key] = {
+                                x = x,
+                                y = y,
+                                color = pixel.color
+                            }
+                        end
                     end
                 end
             end
         end
+    end
+    
+    -- Convert pixel map back to array
+    for _, pixel in pairs(pixelMap) do
+        table.insert(result.pixels, pixel)
     end
     
     return result

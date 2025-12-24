@@ -154,20 +154,6 @@ local function parseCSSStyles(svgContent)
     return styles
 end
 
--- Helper function to find color from class string (handles multiple classes)
-local function getColorFromClass(classString, cssStyles)
-    if not classString or not cssStyles then return nil end
-    
-    -- Split class string by spaces and check each class
-    for className in classString:gmatch("([^%s]+)") do
-        if cssStyles[className] then
-            return cssStyles[className]
-        end
-    end
-    
-    return nil
-end
-
 -- Main parsing function with group support
 function SVGParser.parse(svgContent)
     local result = {
@@ -206,14 +192,10 @@ function SVGParser.parse(svgContent)
                     local fillColor = hexToRgb(groupFill)
                     table.insert(groupFillStack, fillColor)
                     currentGroupFill = fillColor
-                elseif groupClass then
-                    local fillColor = getColorFromClass(groupClass, cssStyles)
-                    if fillColor then
-                        table.insert(groupFillStack, fillColor)
-                        currentGroupFill = fillColor
-                    else
-                        table.insert(groupFillStack, currentGroupFill) -- Inherit parent group fill
-                    end
+                elseif groupClass and cssStyles[groupClass] then
+                    local fillColor = cssStyles[groupClass]
+                    table.insert(groupFillStack, fillColor)
+                    currentGroupFill = fillColor
                 else
                     table.insert(groupFillStack, currentGroupFill) -- Inherit parent group fill
                 end
@@ -269,16 +251,9 @@ function SVGParser.parse(svgContent)
                 if pathFill then
                     -- Path has explicit fill - use it
                     fillColor = hexToRgb(pathFill)
-                elseif pathClass then
-                    -- Path uses CSS class - look up color (handles multiple classes)
-                    fillColor = getColorFromClass(pathClass, cssStyles)
-                    if not fillColor and currentGroupFill then
-                        -- No matching class - inherit from group
-                        fillColor = currentGroupFill
-                    elseif not fillColor then
-                        -- No fill anywhere - default to black
-                        fillColor = {r = 0, g = 0, b = 0}
-                    end
+                elseif pathClass and cssStyles[pathClass] then
+                    -- Path uses CSS class - look up color
+                    fillColor = cssStyles[pathClass]
                 elseif currentGroupFill then
                     -- No explicit fill - inherit from group
                     fillColor = currentGroupFill
@@ -321,16 +296,9 @@ function SVGParser.parse(svgContent)
                 if rectFill then
                     -- Rect has explicit fill - use it
                     fillColor = hexToRgb(rectFill)
-                elseif rectClass then
-                    -- Rect uses CSS class - look up color (handles multiple classes)
-                    fillColor = getColorFromClass(rectClass, cssStyles)
-                    if not fillColor and currentGroupFill then
-                        -- No matching class - inherit from group
-                        fillColor = currentGroupFill
-                    elseif not fillColor then
-                        -- No fill anywhere - default to black
-                        fillColor = {r = 0, g = 0, b = 0}
-                    end
+                elseif rectClass and cssStyles[rectClass] then
+                    -- Rect uses CSS class - look up color
+                    fillColor = cssStyles[rectClass]
                 elseif currentGroupFill then
                     -- No explicit fill - inherit from group
                     fillColor = currentGroupFill
