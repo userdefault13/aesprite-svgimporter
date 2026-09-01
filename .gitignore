@@ -1,0 +1,16 @@
+.DS_Store
+*.log
+dist/
+frame-duration-test.txt
+anim-test-out*.txt
+test-frame-duration.lua
+gotchi-rect-test.*
+hand-out*
+hand-test*
+hand-transparent*
+tentacle-*
+tmp-gotchi-out.png
+hand-debug*.lua
+tip-dump.lua
+tentacle-compare.lua
+test-circle-cubic-svg.lua
