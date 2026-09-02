@@ -6,15 +6,26 @@ Built for pixel-art SVGs (paths and rects on a grid). Originally developed for [
 
 ## Install
 
-1. Download or build the extension:
-   - **Release:** `dist/svg-importer.aseprite-extension`
-   - **From source:** `./scripts/build-extension.sh`
+### npm (recommended)
+
+```bash
+npx @userdefault/svg-importer install
+```
+
+Restart Aseprite, then use **File → Import SVG**.
+
+### Manual extension file
+
+1. Download `svg-importer.aseprite-extension` from [GitHub Releases](https://github.com/userdefault13/aesprite-svgimporter/releases)
+   or build: `./scripts/build-extension.sh` → `dist/svg-importer.aseprite-extension`
 2. In Aseprite: **Edit → Preferences → Extensions → Add Extension**
-3. Select `svg-importer.aseprite-extension`
+3. Select the `.aseprite-extension` file
 4. Restart Aseprite
 5. Run **File → Import SVG**
 
 Requires Aseprite **1.3.x** (extensions + clipboard API).
+
+Publishing notes: [docs/NPM.md](docs/NPM.md)
 
 ## Quick start
 

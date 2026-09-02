@@ -1,0 +1,52 @@
+{
+  "name": "@userdefault/svg-importer",
+  "version": "1.0.0",
+  "description": "SVG importer for Aseprite — pixel-perfect rendering, animation frames, and CLI batch import",
+  "license": "MIT",
+  "author": "Undeadpixel Studio",
+  "homepage": "https://github.com/userdefault13/aesprite-svgimporter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userdefault13/aesprite-svgimporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/userdefault13/aesprite-svgimporter/issues"
+  },
+  "keywords": [
+    "aseprite",
+    "svg",
+    "pixel-art",
+    "importer",
+    "extension",
+    "aavegotchi"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "svg-importer": "scripts/install-extension.mjs"
+  },
+  "files": [
+    "dist/svg-importer.aseprite-extension",
+    "extracted/package.json",
+    "extracted/svg-importer.lua",
+    "extracted/svg-animation.lua",
+    "extracted/svg-parser.lua",
+    "extracted/svg-renderer-professional.lua",
+    "scripts/install-extension.mjs",
+    "scripts/build-extension.sh",
+    "svg-importer-cli.lua",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bash scripts/build-extension.sh",
+    "prepublishOnly": "npm run build",
+    "install:extension": "node scripts/install-extension.mjs install",
+    "publish:npm": "npm publish --access public"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
