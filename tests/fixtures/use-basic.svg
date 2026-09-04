@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10">
+  <defs>
+    <circle id="c" cx="4" cy="4" r="3" fill="#123456"/>
+  </defs>
+  <use href="#c" x="8" y="0"/>
+</svg>

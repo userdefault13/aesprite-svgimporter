@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <mask id="m">
+      <rect x="0" y="0" width="10" height="20" fill="#ffffff"/>
+    </mask>
+    <clipPath id="c">
+      <circle cx="10" cy="10" r="8"/>
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="20" height="20" fill="#ff0000" mask="url(#m)" clip-path="url(#c)"/>
+</svg>

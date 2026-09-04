@@ -1,6 +1,7 @@
 .DS_Store
 *.log
 dist/
+tests/golden/current.txt
 frame-duration-test.txt
 anim-test-out*.txt
 test-frame-duration.lua

@@ -12,7 +12,8 @@ local function drawPixelsToCel(sprite, layer, frameIndex, pixels, canvasWidth, c
 
     for _, pixel in ipairs(pixels) do
         if pixel.x >= 0 and pixel.x < canvasWidth and pixel.y >= 0 and pixel.y < canvasHeight then
-            local color = Color{r = pixel.color.r, g = pixel.color.g, b = pixel.color.b, a = 255}
+            local alpha = pixel.alpha or 1
+            local color = Color{r = pixel.color.r, g = pixel.color.g, b = pixel.color.b, a = math.floor(alpha * 255 + 0.5)}
             image:drawPixel(pixel.x, pixel.y, color)
         end
     end

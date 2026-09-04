@@ -1,8 +1,8 @@
 # SVG Importer for Aseprite
 
-Import SVG files and inline SVG code into Aseprite sprites with pixel-perfect rendering, CSS class support, and animation frame detection.
+Import SVG files and inline SVG code into Aseprite sprites with pixel-perfect rendering, gradients, strokes, full transforms, `<use>`, masks/clip-paths, and multi-animator SMIL animation.
 
-Built for pixel-art SVGs (paths and rects on a grid). Originally developed for [Aavegotchi](https://aavegotchi.com/) wearables, but works with any compatible SVG.
+Built for pixel-art SVGs (paths and shapes on a grid). Originally developed for [Aavegotchi](https://aavegotchi.com/) wearables, but works with most static and animated SVG markup — see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) for the remaining gaps (text, filters, embedded images, CSS `@keyframes`).
 
 ## Install
 
@@ -55,36 +55,39 @@ Aseprite text fields are single-line only, so multi-line SVG must go through the
 
 **Pose groups:** sibling top-level `<g class="gotchi-handsUp">` … groups each become a frame (common in Aavegotchi JSON fragments).
 
-**SMIL:** `<animateTransform values="..." dur="...">` is sampled at **SMIL FPS** (default 8). Frame durations are set on the timeline for SMIL imports.
+**SMIL:** `<animateTransform>`, `<animate>`/`<animateColor>` (any attribute — fill, opacity, geometry, …), and `<animateMotion>` are all sampled at **SMIL FPS** (default 8), with proper time-based interpolation between keyframes. Multiple simultaneous animators are supported — each targets its own element (nesting parent, or `xlink:href`/`href` by id) and can loop independently if its `dur` is shorter than the longest animator on the page. Frame durations are set on the timeline for SMIL imports.
 
 Imported animations get an `animation` tag spanning all frames.
 
 ## CLI
 
-Run from the repository root (scripts use `dofile` for sibling modules):
+Run from the repository root (scripts use `dofile` for sibling modules). Aseprite 1.3.x does not
+forward `-- arg1 arg2 ...` to a batch script's `...`, so pass arguments via `--script-param` (or
+the equivalent environment variables):
 
 ```bash
 # Single frame, auto canvas size
-aseprite -b --script svg-importer-cli.lua -- input.svg
+aseprite -b --script-param file=input.svg --script svg-importer-cli.lua
 
 # Fixed canvas + output path
-aseprite -b --script svg-importer-cli.lua -- input.svg 64 64 output.aseprite
+aseprite -b --script-param file=input.svg --script-param width=64 --script-param height=64 \
+  --script-param output=output.aseprite --script svg-importer-cli.lua
 
 # Animated import (pose groups or SMIL)
 SVG_FILE=input.svg SVG_ANIMATED=1 SVG_FPS=8 SVG_OUTPUT=out.aseprite \
   aseprite -b --script svg-importer-cli.lua
 ```
 
-### Environment variables
+### Parameters (`--script-param name=value`, or the matching env var)
 
-| Variable | Values | Description |
-|----------|--------|-------------|
-| `SVG_FILE` | path | Input SVG |
-| `SVG_OUTPUT` | path | Output `.aseprite` file |
-| `SVG_WIDTH` / `SVG_HEIGHT` | number | Canvas size (optional) |
-| `SVG_IMPORT_MODE` | `Auto`, `Single Frame`, `Animation Frames` | Import mode |
-| `SVG_ANIMATED` | `1` | Same as Animation Frames mode |
-| `SVG_FPS` | number | SMIL sampling rate (default 8) |
+| `--script-param` | Env var | Values | Description |
+|---|---|---|---|
+| `file` | `SVG_FILE` | path | Input SVG |
+| `output` | `SVG_OUTPUT` | path | Output `.aseprite` file |
+| `width` / `height` | `SVG_WIDTH` / `SVG_HEIGHT` | number | Canvas size (optional) |
+| `mode` | `SVG_IMPORT_MODE` | `Auto`, `Single Frame`, `Animation Frames` | Import mode |
+| `animated` | `SVG_ANIMATED` | `1` | Same as `mode=Animation Frames` |
+| `fps` | `SVG_FPS` | number | SMIL sampling rate (default 8) |
 
 ## Examples
 
@@ -109,6 +112,12 @@ aesprite-svgimporter/
 ├── svg-parser.lua
 ├── svg-renderer-professional.lua
 ├── svg-importer-cli.lua
+├── tests/
+│   ├── run-fixtures.lua           # Parser/renderer unit tests, pixel-exact
+│   ├── run-animation-fixtures.lua # SMIL engine unit tests
+│   ├── run-golden.lua             # Regression snapshot over examples/svgItems/
+│   ├── fixtures/                  # One SVG per targeted capability
+│   └── golden/baseline.txt        # Committed snapshot to diff against
 ├── docs/
 │   ├── LIMITATIONS.md
 │   └── BATCH_PROCESSING.md
@@ -123,9 +132,19 @@ cp svg-*.lua extracted/
 ./scripts/build-extension.sh
 ```
 
+### Tests
+
+```bash
+aseprite -b --script tests/run-fixtures.lua            # parser + renderer, pixel-exact assertions
+aseprite -b --script tests/run-animation-fixtures.lua   # SMIL engine
+aseprite -b --script-param output=tests/golden/current.txt --script tests/run-golden.lua
+diff tests/golden/baseline.txt tests/golden/current.txt # should be empty (or explainable)
+```
+
 ## Limitations
 
-See [docs/LIMITATIONS.md](docs/LIMITATIONS.md). Notable gaps: no gradient/stroke/text support, partial SMIL only.
+See [docs/LIMITATIONS.md](docs/LIMITATIONS.md). Notable gaps: text, filters, embedded raster
+images, CSS `@keyframes`, curved `animateMotion` paths.
 
 ## Batch processing (Aavegotchi)
 

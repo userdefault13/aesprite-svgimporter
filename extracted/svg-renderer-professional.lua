@@ -898,94 +898,6 @@ local function resolveElementTransform(element)
     return pathFn, pathInv
 end
 
--- Convert <rect> geometry to a path element with baked transforms (no svgMatrix).
--- Used by renderRect and by pathCoverage so rects never hit empty coverage.
-local function rectToPathElement(rect)
-    if not rect or not rect.width or not rect.height then
-        return nil
-    end
-    if rect.width <= 0 or rect.height <= 0 then
-        return nil
-    end
-
-    local x = rect.x or 0
-    local y = rect.y or 0
-    local width = rect.width
-    local height = rect.height
-    local m = rect.svgMatrix
-    if m then
-        -- Transform rect origin; axis-aligned scale from matrix diagonal
-        local x2, y2 = m.a * (x + width) + m.c * y + m.e, m.b * (x + width) + m.d * y + m.f
-        local x3, y3 = m.a * x + m.c * (y + height) + m.e, m.b * x + m.d * (y + height) + m.f
-        local x0, y0 = m.a * x + m.c * y + m.e, m.b * x + m.d * y + m.f
-        local minX = math.min(x0, x2, x3)
-        local minY = math.min(y0, y2, y3)
-        local maxX = math.max(x0, x2, x3)
-        local maxY = math.max(y0, y2, y3)
-        -- Also include opposite corner
-        local x4, y4 = m.a * (x + width) + m.c * (y + height) + m.e, m.b * (x + width) + m.d * (y + height) + m.f
-        minX = math.min(minX, x4)
-        minY = math.min(minY, y4)
-        maxX = math.max(maxX, x4)
-        maxY = math.max(maxY, y4)
-        x, y = minX, minY
-        width, height = maxX - minX, maxY - minY
-    else
-        local svgOffsetX = (rect.svgOffset and rect.svgOffset.x) or 0
-        local svgOffsetY = (rect.svgOffset and rect.svgOffset.y) or 0
-        x = x + svgOffsetX
-        y = y + svgOffsetY
-    end
-
-    if rect.transform then
-        local angle, cx, cy = rect.transform:match("rotate%(([^%s,]+)%s*([^%s,]+)%s*([^%)]+)%)")
-        if not angle then
-            angle = rect.transform:match("rotate%(([^%)]+)%)")
-        end
-        if angle then
-            angle = tonumber(angle) or 0
-            if math.abs(math.abs(angle) - 90) < 0.1 then
-                width, height = height, width
-                if cx and cy then
-                    cx, cy = tonumber(cx), tonumber(cy)
-                    local oldCenterX = x + width / 2
-                    local oldCenterY = y + height / 2
-                    if angle < 0 then
-                        x = cx - (oldCenterY - cy) - width / 2
-                        y = cy + (oldCenterX - cx) - height / 2
-                    else
-                        x = cx + (oldCenterY - cy) - width / 2
-                        y = cy - (oldCenterX - cx) - height / 2
-                    end
-                end
-            end
-        end
-    end
-
-    return {
-        type = "path",
-        fill = rect.fill,
-        patternId = rect.patternId,
-        maskId = rect.maskId,
-        opacity = rect.opacity,
-        pathCommands = {
-            {type = "M", isRelative = false, params = {x, y}},
-            {type = "L", isRelative = false, params = {x + width, y}},
-            {type = "L", isRelative = false, params = {x + width, y + height}},
-            {type = "L", isRelative = false, params = {x, y + height}},
-            {type = "Z", isRelative = false, params = {}}
-        }
-    }
-end
-
--- Normalize geometry for pathCoverage: rects lack pathCommands until converted.
-local function coverageGeometry(element)
-    if element and element.type == "rect" then
-        return rectToPathElement(element)
-    end
-    return element
-end
-
 local function pathCanvasOffsets(path, scale)
     -- svgMatrix already includes translation; only use svgOffset as legacy fallback
     if path and path.svgMatrix then
@@ -1003,11 +915,6 @@ end
 -- Build coverage set from path geometry (keys = x + y * width → true)
 local function pathCoverage(path, viewBox, targetWidth, targetHeight, transformFn)
     local coverage = {}
-    -- Rects have no pathCommands; bake transforms into a path first
-    local fromRect = path and path.type == "rect"
-    if fromRect then
-        path = rectToPathElement(path)
-    end
     if not path or not path.pathCommands or #path.pathCommands == 0 then
         return coverage
     end
@@ -1017,11 +924,8 @@ local function pathCoverage(path, viewBox, targetWidth, targetHeight, transformF
     local scaleY = targetHeight / viewBox.height
     local scale = math.min(scaleX, scaleY)
     -- Prefer element svgMatrix; caller transformFn overrides only when explicitly passed.
-    -- Baked rect geometry must not re-apply svgMatrix via resolveElementTransform.
     local tf = transformFn
-    if fromRect then
-        tf = nil
-    elseif tf == nil then
+    if tf == nil then
         tf = resolveElementTransform(path)
     end
     local offsetX, offsetY = pathCanvasOffsets(path, scale)
@@ -1123,20 +1027,133 @@ local function samplePattern(tile, pattern, x, y)
     return tile.cells[lx + ly * w] or 0
 end
 
+-- ============================================================================
+-- GRADIENT SAMPLING
+-- objectBoundingBox gradients (the spec default) resolve entirely in canvas
+-- pixel space using the element's own rendered bounding box, so they're
+-- correct under any transform. userSpaceOnUse gradients are defined in the
+-- element's local (pre-transform) coordinate space, so each pixel is mapped
+-- back via the element's inverse transform before projecting.
+-- ============================================================================
+
+local function sortedGradientStops(gradient)
+    if gradient.sortedStops then return gradient.sortedStops end
+    local stops = {}
+    for _, s in ipairs(gradient.stops) do table.insert(stops, s) end
+    table.sort(stops, function(a, b) return a.offset < b.offset end)
+    gradient.sortedStops = stops
+    return stops
+end
+
+local function sampleGradientStops(stops, t)
+    if #stops == 0 then return { r = 0, g = 0, b = 0 }, 1 end
+    t = math.max(0, math.min(1, t))
+    if #stops == 1 or t <= stops[1].offset then
+        return stops[1].color, stops[1].opacity
+    end
+    local last = stops[#stops]
+    if t >= last.offset then
+        return last.color, last.opacity
+    end
+    for i = 1, #stops - 1 do
+        local a, b = stops[i], stops[i + 1]
+        if t >= a.offset and t <= b.offset then
+            local span = b.offset - a.offset
+            local f = span > 0 and ((t - a.offset) / span) or 0
+            return {
+                r = math.floor(a.color.r + (b.color.r - a.color.r) * f + 0.5),
+                g = math.floor(a.color.g + (b.color.g - a.color.g) * f + 0.5),
+                b = math.floor(a.color.b + (b.color.b - a.color.b) * f + 0.5)
+            }, a.opacity + (b.opacity - a.opacity) * f
+        end
+    end
+    return last.color, last.opacity
+end
+
+local function computeBBoxFromShape(shape, targetWidth)
+    local minX, maxX, minY, maxY = math.huge, -math.huge, math.huge, -math.huge
+    for key, _ in pairs(shape) do
+        local x = key % targetWidth
+        local y = math.floor(key / targetWidth)
+        if x < minX then minX = x end
+        if x > maxX then maxX = x end
+        if y < minY then minY = y end
+        if y > maxY then maxY = y end
+    end
+    if minX > maxX then return nil end
+    return { minX = minX, maxX = maxX, minY = minY, maxY = maxY }
+end
+
+-- Builds a function(x, y) -> t (0..1 gradient position), resolved once per
+-- painted element rather than per pixel.
+local function buildGradientProjector(gradient, bbox, transformInv)
+    if gradient.type == "linear" then
+        if bbox then
+            local bw, bh = bbox.maxX - bbox.minX, bbox.maxY - bbox.minY
+            local x1 = bbox.minX + gradient.x1 * bw
+            local y1 = bbox.minY + gradient.y1 * bh
+            local x2 = bbox.minX + gradient.x2 * bw
+            local y2 = bbox.minY + gradient.y2 * bh
+            local dx, dy = x2 - x1, y2 - y1
+            local lenSq = dx * dx + dy * dy
+            return function(x, y)
+                if lenSq <= 0 then return 0 end
+                return ((x - x1) * dx + (y - y1) * dy) / lenSq
+            end
+        end
+        local dx, dy = gradient.x2 - gradient.x1, gradient.y2 - gradient.y1
+        local lenSq = dx * dx + dy * dy
+        return function(x, y)
+            local lx, ly = x, y
+            if transformInv then lx, ly = transformInv(x, y) end
+            if lenSq <= 0 then return 0 end
+            return ((lx - gradient.x1) * dx + (ly - gradient.y1) * dy) / lenSq
+        end
+    else -- radial
+        if bbox then
+            local bw, bh = bbox.maxX - bbox.minX, bbox.maxY - bbox.minY
+            local cx = bbox.minX + gradient.cx * bw
+            local cy = bbox.minY + gradient.cy * bh
+            local r = gradient.r * math.sqrt((bw * bw + bh * bh) / 2)
+            return function(x, y)
+                if r <= 0 then return 0 end
+                local dx, dy = x - cx, y - cy
+                return math.sqrt(dx * dx + dy * dy) / r
+            end
+        end
+        return function(x, y)
+            local lx, ly = x, y
+            if transformInv then lx, ly = transformInv(x, y) end
+            if gradient.r <= 0 then return 0 end
+            local dx, dy = lx - gradient.cx, ly - gradient.cy
+            return math.sqrt(dx * dx + dy * dy) / gradient.r
+        end
+    end
+end
+
+-- Standard "over" alpha compositing. dst may be nil (nothing painted here
+-- yet, i.e. the true canvas background is transparent, not black) or
+-- {color, alpha}; src is always fully-opaque paint blended in at `opacity`.
+-- Returns {color, alpha} rather than assuming the result is opaque, so a
+-- lone element at opacity < 1 stays translucent instead of blending toward
+-- black as if painted over an opaque background.
 local function blendColor(dst, src, opacity)
     opacity = opacity or 1
-    if not dst then
-        return {
-            r = math.floor((src.r or 0) * opacity + 0.5),
-            g = math.floor((src.g or 0) * opacity + 0.5),
-            b = math.floor((src.b or 0) * opacity + 0.5)
-        }
+    local dstAlpha = dst and dst.alpha or 0
+    local dstColor = dst and dst.color
+    local outAlpha = opacity + dstAlpha * (1 - opacity)
+    if outAlpha <= 0 then
+        return { color = { r = 0, g = 0, b = 0 }, alpha = 0 }
     end
-    local inv = 1 - opacity
+    local srcWeight = opacity / outAlpha
+    local dstWeight = (dstAlpha * (1 - opacity)) / outAlpha
     return {
-        r = math.floor((dst.r or 0) * inv + (src.r or 0) * opacity + 0.5),
-        g = math.floor((dst.g or 0) * inv + (src.g or 0) * opacity + 0.5),
-        b = math.floor((dst.b or 0) * inv + (src.b or 0) * opacity + 0.5)
+        color = {
+            r = math.floor((src.r or 0) * srcWeight + (dstColor and dstColor.r or 0) * dstWeight + 0.5),
+            g = math.floor((src.g or 0) * srcWeight + (dstColor and dstColor.g or 0) * dstWeight + 0.5),
+            b = math.floor((src.b or 0) * srcWeight + (dstColor and dstColor.b or 0) * dstWeight + 0.5)
+        },
+        alpha = outAlpha
     }
 end
 
@@ -1205,12 +1222,134 @@ local function renderPath(path, viewBox, targetWidth, targetHeight)
     return pixels
 end
 
-local function renderRect(rect, viewBox, targetWidth, targetHeight)
-    local path = rectToPathElement(rect)
-    if not path then
-        return {}
+-- ============================================================================
+-- STROKE RENDERING
+-- Thick-line rasterization: each flattened segment becomes a filled quad
+-- (perpendicular offset by half the stroke width), with a round joint disc
+-- at interior vertices so corners on wide strokes don't gap.
+-- ============================================================================
+
+local function discPoints(cx, cy, radius, segments)
+    segments = segments or 10
+    local pts = {}
+    for n = 0, segments - 1 do
+        local angle = (n / segments) * math.pi * 2
+        table.insert(pts, {x = cx + math.cos(angle) * radius, y = cy + math.sin(angle) * radius})
     end
-    return renderPath(path, viewBox, targetWidth, targetHeight)
+    return pts
+end
+
+local function strokeSegmentPixels(x1, y1, x2, y2, halfWidth, width, height, color)
+    local dx, dy = x2 - x1, y2 - y1
+    local len = math.sqrt(dx * dx + dy * dy)
+    if len < 1e-6 then
+        return scanlineFillNonZero(discPoints(x1, y1, halfWidth, 10), width, height, color)
+    end
+    local nx, ny = -dy / len, dx / len
+    local quad = {
+        {x = x1 + nx * halfWidth, y = y1 + ny * halfWidth},
+        {x = x2 + nx * halfWidth, y = y2 + ny * halfWidth},
+        {x = x2 - nx * halfWidth, y = y2 - ny * halfWidth},
+        {x = x1 - nx * halfWidth, y = y1 - ny * halfWidth}
+    }
+    return scanlineFillNonZero(quad, width, height, color)
+end
+
+local function renderStroke(element, viewBox, targetWidth, targetHeight)
+    local pixels = {}
+    if not element or not element.stroke or not element.strokeWidth or element.strokeWidth <= 0 then
+        return pixels
+    end
+    if not element.pathCommands or #element.pathCommands == 0 then
+        return pixels
+    end
+    if not viewBox or not viewBox.width or not viewBox.height then
+        return pixels
+    end
+
+    local scaleX = targetWidth / viewBox.width
+    local scaleY = targetHeight / viewBox.height
+    local scale = math.min(scaleX, scaleY)
+    if not scale or scale <= 0 or scale ~= scale then
+        return pixels
+    end
+
+    local offsetX, offsetY = pathCanvasOffsets(element, scale)
+    local transformFn = resolveElementTransform(element)
+    local subPaths = separateSubPaths(element.pathCommands)
+    local lastSX, lastSY = 0, 0
+    local halfWidth = math.max(0.5, (element.strokeWidth * scale) / 2)
+    local color = element.stroke
+
+    for _, subPath in ipairs(subPaths) do
+        local points, endX, endY, endSX, endSY = subPathToPoints(
+            subPath, scale, offsetX, offsetY, viewBox.x or 0, viewBox.y or 0, lastSX, lastSY, transformFn
+        )
+        if endSX then lastSX = endSX end
+        if endSY then lastSY = endSY end
+
+        for idx = 1, #points - 1 do
+            local segPixels = strokeSegmentPixels(
+                points[idx].x, points[idx].y, points[idx + 1].x, points[idx + 1].y,
+                halfWidth, targetWidth, targetHeight, color
+            )
+            for _, p in ipairs(segPixels) do
+                table.insert(pixels, p)
+            end
+            -- Round joint at interior vertices closes gaps on wide strokes
+            if halfWidth > 0.75 and idx < #points - 1 then
+                local jointPixels = scanlineFillNonZero(
+                    discPoints(points[idx + 1].x, points[idx + 1].y, halfWidth, 10),
+                    targetWidth, targetHeight, color
+                )
+                for _, p in ipairs(jointPixels) do
+                    table.insert(pixels, p)
+                end
+            end
+        end
+    end
+
+    return pixels
+end
+
+-- ============================================================================
+-- MASK / CLIP-PATH COVERAGE MAPS
+-- Masks and clip-paths are both treated as shape-presence coverage (not
+-- luminance), so they share one coverage-building routine.
+-- ============================================================================
+
+local function buildCoverageMaps(defs, patterns, patternTiles, viewBox, targetWidth, targetHeight)
+    local maps = {}
+    for id, def in pairs(defs or {}) do
+        -- A def with zero resolvable children (unsupported content the parser
+        -- couldn't capture, e.g. <text>/<image>) fails open: no maps[id] entry
+        -- means the mask/clip-path constraint is skipped rather than hiding
+        -- everything that references it.
+        if def.elements and #def.elements > 0 then
+            local map = {}
+            for _, elem in ipairs(def.elements) do
+                if elem.patternId and patternTiles[elem.patternId] then
+                    local shape = pathCoverage(elem, viewBox, targetWidth, targetHeight, nil)
+                    local tile = patternTiles[elem.patternId]
+                    local pat = patterns[elem.patternId]
+                    for key, _ in pairs(shape) do
+                        local x = key % targetWidth
+                        local y = math.floor(key / targetWidth)
+                        if samplePattern(tile, pat, x, y) > 0 then
+                            map[key] = 1
+                        end
+                    end
+                else
+                    local shape = pathCoverage(elem, viewBox, targetWidth, targetHeight, nil)
+                    for key, _ in pairs(shape) do
+                        map[key] = 1
+                    end
+                end
+            end
+            maps[id] = map
+        end
+    end
+    return maps
 end
 
 function SVGRenderer.render(svgData, targetWidth, targetHeight)
@@ -1231,6 +1370,8 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
     local pixelMap = {}
     local patterns = svgData.patterns or {}
     local masks = svgData.masks or {}
+    local clipPaths = svgData.clipPaths or {}
+    local gradients = svgData.gradients or {}
 
     local patternTiles = {}
     for id, pattern in pairs(patterns) do
@@ -1239,33 +1380,8 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
         patternTiles[id] = renderPatternTile(pattern, patterns, w, h)
     end
 
-    local maskMaps = {}
-    for id, mask in pairs(masks) do
-        local map = {}
-        for _, elem in ipairs(mask.elements or {}) do
-            local geom = coverageGeometry(elem)
-            if not geom then
-                -- skip invalid rect / empty geometry
-            elseif elem.patternId and patternTiles[elem.patternId] then
-                local shape = pathCoverage(geom, svgData.viewBox, targetWidth, targetHeight, nil)
-                local tile = patternTiles[elem.patternId]
-                local pat = patterns[elem.patternId]
-                for key, _ in pairs(shape) do
-                    local x = key % targetWidth
-                    local y = math.floor(key / targetWidth)
-                    if samplePattern(tile, pat, x, y) > 0 then
-                        map[key] = 1
-                    end
-                end
-            else
-                local shape = pathCoverage(geom, svgData.viewBox, targetWidth, targetHeight, nil)
-                for key, _ in pairs(shape) do
-                    map[key] = 1
-                end
-            end
-        end
-        maskMaps[id] = map
-    end
+    local maskMaps = buildCoverageMaps(masks, patterns, patternTiles, svgData.viewBox, targetWidth, targetHeight)
+    local clipMaps = buildCoverageMaps(clipPaths, patterns, patternTiles, svgData.viewBox, targetWidth, targetHeight)
 
     local function putPixel(x, y, color, opacity)
         if not color then return end
@@ -1273,31 +1389,24 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
         local key = x + y * targetWidth
         local op = opacity or 1
         if op >= 0.999 then
-            pixelMap[key] = { x = x, y = y, color = { r = color.r, g = color.g, b = color.b } }
+            pixelMap[key] = { x = x, y = y, color = { r = color.r, g = color.g, b = color.b }, alpha = 1 }
         else
-            local existing = pixelMap[key]
-            local blended = blendColor(existing and existing.color or nil, color, op)
-            pixelMap[key] = { x = x, y = y, color = blended }
+            local blended = blendColor(pixelMap[key], color, op)
+            pixelMap[key] = { x = x, y = y, color = blended.color, alpha = blended.alpha }
         end
     end
 
     local function paintElement(element)
-        local opacity = element.opacity or 1
-        local maskMap = element.maskId and maskMaps[element.maskId] or nil
-        -- Bake rect transforms into pathCommands; avoid double-applying svgMatrix via transformFn
-        local geom = coverageGeometry(element)
-        if not geom then
+        if not element.pathCommands or #element.pathCommands == 0 then
             return
         end
-        local transformFn, transformInv
-        if element.type == "rect" then
-            transformFn, transformInv = nil, nil
-        else
-            transformFn, transformInv = resolveElementTransform(element)
-        end
+        local opacity = element.opacity or 1
+        local maskMap = element.maskId and maskMaps[element.maskId] or nil
+        local clipMap = element.clipId and clipMaps[element.clipId] or nil
+        local transformFn, transformInv = resolveElementTransform(element)
 
         local function maskAllows(x, y)
-            if not maskMap then return true end
+            if not maskMap and not clipMap then return true end
             local mx, my = x, y
             if transformInv then
                 mx, my = transformInv(x, y)
@@ -1307,11 +1416,28 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
             if mx < 0 or my < 0 or mx >= targetWidth or my >= targetHeight then
                 return false
             end
-            return maskMap[mx + my * targetWidth] ~= nil
+            local key = mx + my * targetWidth
+            if maskMap and not maskMap[key] then return false end
+            if clipMap and not clipMap[key] then return false end
+            return true
         end
 
-        if element.patternId and patternTiles[element.patternId] then
-            local shape = pathCoverage(geom, svgData.viewBox, targetWidth, targetHeight, transformFn)
+        if element.patternId and gradients[element.patternId] then
+            local gradient = gradients[element.patternId]
+            local shape = pathCoverage(element, svgData.viewBox, targetWidth, targetHeight, transformFn)
+            local bbox = (gradient.units ~= "userSpaceOnUse") and computeBBoxFromShape(shape, targetWidth) or nil
+            local projector = buildGradientProjector(gradient, bbox, transformInv)
+            local stops = sortedGradientStops(gradient)
+            for key, _ in pairs(shape) do
+                local x = key % targetWidth
+                local y = math.floor(key / targetWidth)
+                if maskAllows(x, y) then
+                    local color, stopOpacity = sampleGradientStops(stops, projector(x, y))
+                    putPixel(x, y, color, opacity * stopOpacity)
+                end
+            end
+        elseif element.patternId and patternTiles[element.patternId] then
+            local shape = pathCoverage(element, svgData.viewBox, targetWidth, targetHeight, transformFn)
             local tile = patternTiles[element.patternId]
             local pat = patterns[element.patternId]
             local paint = element.fill or { r = 255, g = 255, b = 255 }
@@ -1322,12 +1448,11 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
                     putPixel(x, y, paint, opacity)
                 end
             end
-            return
-        end
-
-        if element.fill then
-            if maskMap or transformFn then
-                local shape = pathCoverage(geom, svgData.viewBox, targetWidth, targetHeight, transformFn)
+        elseif element.fill then
+            -- Coverage-set path only needed when a mask/clip has to test per-pixel;
+            -- renderPath already applies transformFn internally and is faster.
+            if maskMap or clipMap then
+                local shape = pathCoverage(element, svgData.viewBox, targetWidth, targetHeight, transformFn)
                 for key, _ in pairs(shape) do
                     local x = key % targetWidth
                     local y = math.floor(key / targetWidth)
@@ -1336,12 +1461,7 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
                     end
                 end
             else
-                local success, pathPixels
-                if element.type == "rect" then
-                    success, pathPixels = pcall(renderRect, element, svgData.viewBox, targetWidth, targetHeight)
-                else
-                    success, pathPixels = pcall(renderPath, element, svgData.viewBox, targetWidth, targetHeight)
-                end
+                local success, pathPixels = pcall(renderPath, element, svgData.viewBox, targetWidth, targetHeight)
                 if success and pathPixels then
                     for _, pixel in ipairs(pathPixels) do
                         if pixel and pixel.x and pixel.y and pixel.color then
@@ -1353,16 +1473,34 @@ function SVGRenderer.render(svgData, targetWidth, targetHeight)
                 end
             end
         end
+
+        if element.stroke and element.strokeWidth and element.strokeWidth > 0 then
+            local strokeOpacity = opacity * (element.strokeOpacity or 1)
+            local success, strokePixels = pcall(renderStroke, element, svgData.viewBox, targetWidth, targetHeight)
+            if success and strokePixels then
+                for _, pixel in ipairs(strokePixels) do
+                    if pixel and pixel.x and pixel.y and pixel.color then
+                        local x = math.floor(pixel.x + 0.5)
+                        local y = math.floor(pixel.y + 0.5)
+                        if maskAllows(x, y) then
+                            putPixel(x, y, pixel.color, strokeOpacity)
+                        end
+                    end
+                end
+            end
+        end
     end
-    
+
     for _, element in ipairs(svgData.elements) do
-        if element.type == "path" or element.type == "rect" then
+        if element.type == "path" then
             pcall(paintElement, element)
         end
     end
     
     for _, pixel in pairs(pixelMap) do
-        table.insert(result.pixels, pixel)
+        if not pixel.alpha or pixel.alpha > 0.001 then
+            table.insert(result.pixels, pixel)
+        end
     end
     
     return result
